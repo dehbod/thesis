@@ -6,7 +6,7 @@ source('Util.R')
 # Sample data -------------------------------------------------------------
 
 cf <- list()
-cf$nSample <- 100
+cf$nSample <- 1000
 cf$nDimention <- 2
 cf$nClass <- 3
 
@@ -50,14 +50,40 @@ sampleDataUniNormal <- function(cf) {
 
 # _Multivariate Normal ----------------------------------------------------
 
-out <- dataConfiguration(cf, multiVariate = TRUE)
+sampleDataMultiNormal <- function(cf) {
+  out <- dataConfiguration(cf, multiVariate = TRUE)
+  
+  cf <- out$cf
+  dClass <- out$dClass
+  dClassMean <- out$dClassMean
+  dClassVar <- out$dClassVar
+  
+  d <- NULL
+  
+  for(i in 1:cf$nClass) {
+    if(is.null(d)) {
+      d <- mvrnorm(cf$classIndex[i+1] - cf$classIndex[i],
+                   mu = out$dClassMean[i,], Sigma = out$dClassVar[i, , ])
+    } else {
+      d <- rbind(d, mvrnorm(cf$classIndex[i+1] - cf$classIndex[i],
+                            mu = out$dClassMean[i,], Sigma = out$dClassVar[i, , ])
+      )
+    }
+  }
+  
+  
+  permuteIndex <- sample.int(cf$nSample, size = cf$nSample)
+  d <- d[permuteIndex, ]
+  dClass <- dClass[permuteIndex]
+  
+  return(list(data = d, class = dClass))
+  
+}
 
-i <- 1
-
-d <- mvrnorm(1000, mu = out$dClassMean[i,], Sigma = out$dClassVar[i, , ])
-
-plot(d, asp = 1)
-
+d <- sampleDataMultiNormal(cf)
+print(head(data.frame(d = d$data, class = d$class)))
+plot(d$data, type = 'p', col = d$class, asp = 1)
+# plot3d(d$data, col = d$class, size = 2, type = 's')
 
 
 # _Alpha Univariate -------------------------------------------------------

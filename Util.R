@@ -27,7 +27,7 @@ dataConfiguration <- function(cf, multiVariate = FALSE) {
     for(i in 1:cf$nClass) {
       correlation <- runif(cf$nDimention^2, min = -0.5, max = 0.5)
       correlation[as.vector(diag(cf$nDimention)) == 1] <- 0.5
-      correlation <- matrix(correlation, nrow = 2)
+      correlation <- matrix(correlation, nrow = cf$nDimention)
       correlation <- correlation + t(correlation)
       sdev <- rep(1, cf$nDimention)
       msdev <- diag(cf$nDimention) * sdev
