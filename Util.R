@@ -25,13 +25,7 @@ dataConfiguration <- function(cf, multiVariate = FALSE) {
   dClassVar <- array(0, dim = c(cf$nClass, cf$nDimention, cf$nDimention))
   if(multiVariate) {
     for(i in 1:cf$nClass) {
-      correlation <- runif(cf$nDimention^2, min = -0.5, max = 0.5)
-      correlation[as.vector(diag(cf$nDimention)) == 1] <- 0.5
-      correlation <- matrix(correlation, nrow = cf$nDimention)
-      correlation <- correlation + t(correlation)
-      sdev <- rep(1, cf$nDimention)
-      msdev <- diag(cf$nDimention) * sdev
-      dClassVar[i, , ] <- msdev %*% correlation %*% msdev
+      dClassVar[i, , ] <- randCovMat(cf$nDimention)
     }
   } else {
     dClassVar[,1,1] <- 1
@@ -45,4 +39,29 @@ dataConfiguration <- function(cf, multiVariate = FALSE) {
     dClassVar = dClassVar
   ))
   
+}
+
+randCovMat <- function(nd, sdev = NULL) {
+
+  if (is.null(sdev)) {
+    sdev <- rep(1, nd)
+  }
+  out <- diag(nd)
+  index <- data.frame(n = 1:((nd*(nd-1)) / 2))
+  index$i <- ceiling((-1+sqrt(1+8*index$n)) / 2)
+  index$j <- index$n - ((index$i - 1)^2 + (index$i - 1)) / 2
+  index$i <- index$i + 1
+  index <- index[sample(index$n, nrow(index)), ]
+  
+  for(i in 1:nrow(index)) {
+    candidate <- seq(from = -1, to = 1, by = 0.01)
+    candidate <- sample(candidate, size = length(candidate))
+    for(k in 1:length(candidate)) {
+      out[index$i[i],index$j[i]] <- candidate[k]
+      out[index$j[i],index$i[i]] <- out[index$i[i],index$j[i]]
+      if(det(out) > 0) break
+    } 
+  }
+  msdev <- diag(nd) * sdev
+  out <- msdev %*% out %*% msdev
 }
