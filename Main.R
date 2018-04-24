@@ -9,8 +9,9 @@ source('Util.R')
 # set.seed(1038)
 cf <- list()
 cf$nSample <- 1000
-cf$nDimention <- 10
+cf$nDimention <- 20
 cf$nClass <- 2
+cf$tDimention <- 2
 
 # _Univariate Normal ------------------------------------------------------
 
@@ -194,8 +195,11 @@ randomProjection <- function(d, targetNumDimention, alpha = 2) {
 # Clustering --------------------------------------------------------------
 
 d <- sampleDataMultiNormal(cf)
-d$data <- randomProjection(d$data, 2)
+d$data <- randomProjection(d$data, cf$tDimention)
 plot(d$data, type = 'p', col = d$class, asp = 1)
+
+
+
 
 # Goodness ----------------------------------------------------------------
 
