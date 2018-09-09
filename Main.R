@@ -64,19 +64,13 @@ sampleDataMultiNormal <- function(cf) {
   dClassMean <- out$dClassMean
   dClassVar <- out$dClassVar
   
-  d <- NULL
+  d <- matrix(0, nrow = 0, ncol = cf$nDimention)
   
   for(i in 1:cf$nClass) {
-    if(is.null(d)) {
-      d <- mvrnorm(cf$classIndex[i+1] - cf$classIndex[i],
-                   mu = out$dClassMean[i,], Sigma = out$dClassVar[i, , ])
-    } else {
-      d <- rbind(d, mvrnorm(cf$classIndex[i+1] - cf$classIndex[i],
-                            mu = out$dClassMean[i,], Sigma = out$dClassVar[i, , ])
-      )
-    }
+    d <- rbind(d, mvrnorm(cf$classIndex[i+1] - cf$classIndex[i],
+                          mu = out$dClassMean[i,], Sigma = out$dClassVar[i, , ])
+    )
   }
-  
   
   permuteIndex <- sample.int(cf$nSample, size = cf$nSample)
   d <- d[permuteIndex, ]
@@ -86,11 +80,13 @@ sampleDataMultiNormal <- function(cf) {
   
 }
 
-# d <- sampleDataMultiNormal(cf)
-# print(head(data.frame(d = d$data, class = d$class)))
-# plot(d$data, type = 'p', col = d$class, asp = 1)
-# plot3d(d$data, col = d$class, size = 2, type = 's')
-
+if(FALSE) {
+  d <- sampleDataMultiNormal(cf)
+  print(head(data.frame(d = d$data, class = d$class)))
+  plot(d$data, type = 'p', col = d$class, asp = 1)
+  plot3d(d$data, col = d$class, size = 2, type = 's')
+  aspect3d(x = 'iso')
+}
 
 # _Alpha Univariate -------------------------------------------------------
 
@@ -201,6 +197,7 @@ randomProjection <- function(d, targetNumDimention, alpha = 2) {
 # d$data <- randomProjection(d$data, cf$tDimention)
 # plot(d$data, type = 'p', col = d$class, asp = 1)
 
+cl <- kmeans(d$data, 2)
 
 
 
