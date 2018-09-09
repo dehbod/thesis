@@ -28,8 +28,9 @@ dataConfiguration <- function(cf, multiVariate = FALSE) {
       dClassVar[i, , ] <- randCovMat(cf$nDimention)
     }
   } else {
-    dClassVar[,1,1] <- 1
-    dClassVar[,2,2] <- 1
+    for(i in 1:cf$nClass) {
+      dClassVar[i, , ] <- diag(cf$nDimention)
+    }
   }
   
   return(list(

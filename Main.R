@@ -9,7 +9,7 @@ source('Util.R')
 # set.seed(1038)
 cf <- list()
 cf$nSample <- 1000
-cf$nDimention <- 20
+cf$nDimention <- 3
 cf$nClass <- 2
 cf$tDimention <- 2
 
@@ -46,10 +46,13 @@ sampleDataUniNormal <- function(cf) {
   
 }
 
-# d <- sampleDataUniNormal(cf)
-# print(head(data.frame(d = d$data, class = d$class)))
-# plot(d$data, type = 'p', col = d$class, asp = 1)
-# plot3d(d$data, col = d$class, size = 2, type = 's')
+if(FALSE) {
+  d <- sampleDataUniNormal(cf)
+  print(head(data.frame(d = d$data, class = d$class)))
+  plot(d$data, type = 'p', col = d$class, asp = 1)
+  plot3d(d$data, col = d$class, size = 2, type = 's')
+  aspect3d(x = 'iso')
+}
 
 # _Multivariate Normal ----------------------------------------------------
 
@@ -194,9 +197,9 @@ randomProjection <- function(d, targetNumDimention, alpha = 2) {
 
 # Clustering --------------------------------------------------------------
 
-d <- sampleDataMultiNormal(cf)
-d$data <- randomProjection(d$data, cf$tDimention)
-plot(d$data, type = 'p', col = d$class, asp = 1)
+# d <- sampleDataMultiNormal(cf)
+# d$data <- randomProjection(d$data, cf$tDimention)
+# plot(d$data, type = 'p', col = d$class, asp = 1)
 
 
 
