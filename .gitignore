@@ -1,2 +1,9 @@
-\.Rhistory
-.Rproj.user
+*.aux
+*.out
+*.log
+*.pdf
+*.idx
+*.lot
+*.lof
+*.toc
+
