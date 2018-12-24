@@ -1,0 +1,1717 @@
+<li><i>[9] Rakesh Agrawal, Heikki Mannila, Ramakrishnan Srikant, Hannu Toivonen, and A. Inkeri Verkamo. Fast discovery of association rules. In Advances in Knowledge Discovery and Data Mining, pages 307{328. AAAI/MIT Press, 1996.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Hannu Toivonen, and</li>
+            
+            
+                <li>Author: Agrawal, Rakesh</li>
+            
+                <li>Author: Verkamo, A. Inkeri</li>
+            
+            
+                <li>Journal&nbsp;title: In Advances in Knowledge Discovery and Data Mining</li>
+            
+            
+                <li>Volume: 307</li>
+                
+                
+            
+                <li>Pages: 328</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1996</li>
+            
+            </ul><br />
+        
+            <li><i>[10] Rakesh Agrawal and Ramakrishnan Srikant. Fast algorithms for mining association rules in large databases. In VLDB, pages 487{499, Santiago de Chile, Chile, 1994.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Fast algorithms for mining association rules in large databases</li>
+            
+            
+                <li>Author: Agrawal, Rakesh</li>
+            
+                <li>Author: Srikant, Ramakrishnan</li>
+            
+            
+                <li>Journal&nbsp;title: In VLDB</li>
+            
+            
+                <li>Volume: 487</li>
+                
+                
+            
+                <li>Pages: 499</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1994</li>
+            
+            </ul><br />
+        
+            <li><i>[11] Alan Agresti. Categorical Data Analysis. John Wiley & Sons, Inc., Hoboken, NJ, second edition, 2002.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Categorical Data Analysis</li>
+            
+            
+                <li>Author: Agresti, Alan</li>
+            
+            
+                
+                
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2002</li>
+            
+            </ul><br />
+        
+            <li><i>[12] Nir Ailon and Bernard Chazelle. Approximate nearest neighbors and the fast Johnson-Lindenstrauss transform. In STOC, pages 557{563, Seattle, WA, 2006.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Approximate nearest neighbors and the fast Johnson-Lindenstrauss transform</li>
+            
+            
+                <li>Author: Ailon, Nir</li>
+            
+                <li>Author: Chazelle, Bernard</li>
+            
+            
+                <li>Journal&nbsp;title: In STOC</li>
+            
+            
+                <li>Volume: 557</li>
+                
+                
+            
+                <li>Pages: 563</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2006</li>
+            
+            </ul><br />
+        
+            <li><i>[13] Noga Alon, Yossi Matias, and Mario Szegedy. The space complexity of approximating the frequency moments. In STOC, pages 20{29, Philadelphia,PA, 1996.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: The space complexity of approximating the frequency moments</li>
+            
+            
+                <li>Author: Noga, Alon</li>
+            
+                <li>Author: Szegedy, Mario</li>
+            
+            
+                <li>Journal&nbsp;title: In STOC</li>
+            
+            
+                <li>Volume: 20</li>
+                
+                
+            
+                <li>Pages: 29</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1996</li>
+            
+            </ul><br />
+        
+            <li><i>[14] Shun-Ichi Amari. Di erential geometry of curved exponential families-curvatures and information loss. Annals of Statistics, 10(2):357{385, 1982.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Di erential geometry of curved exponential families-curvatures and information loss</li>
+            
+            
+                <li>Author: Shun-Ichi Amari</li>
+            
+            
+                <li>Journal&nbsp;title: Annals of Statistics</li>
+            
+            
+                <li>Volume: 10</li>
+                
+            
+                <li>Issue: 2</li>
+                
+            
+                <li>Pages: 385</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1982</li>
+            
+            </ul><br />
+        
+            <li><i>[15] Alexandr Andoni and Piotr Indyk. Near-optimal hashing algorithms for approximate nearest neighbor in high dimensions. In FOCS, pages 459{468, Berkeley, CA, 2006.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Near-optimal hashing algorithms for approximate nearest neighbor in high dimensions</li>
+            
+            
+                <li>Author: Andoni, Alexandr</li>
+            
+                <li>Author: Indyk, Piotr</li>
+            
+            
+                <li>Journal&nbsp;title: In FOCS</li>
+            
+            
+                <li>Volume: 459</li>
+                
+                
+            
+                <li>Pages: 468</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2006</li>
+            
+            </ul><br />
+        
+            <li><i>[16] Charles Antle and Lee Bain. A property of maximum likelihood estimators of location and scale parameters. SIAM Review, 11(2):251{253, 1969.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: A property of maximum likelihood estimators of location and scale parameters</li>
+            
+            
+                <li>Author: Antle, Charles</li>
+            
+                <li>Author: Bain, Lee</li>
+            
+            
+                <li>Journal&nbsp;title: SIAM Review</li>
+            
+            
+                <li>Volume: 11</li>
+                
+            
+                <li>Issue: 2</li>
+                
+            
+                <li>Pages: 253</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1969</li>
+            
+            </ul><br />
+        
+            <li><i>[17] Rosa Arriaga and Santosh Vempala. An algorithmic theory of learning: Robust concepts and random projection. In FOCS, pages 616{623, New York, 1999.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: An algorithmic theory of learning: Robust concepts and random projection</li>
+            
+            
+                <li>Author: Arriaga, Rosa</li>
+            
+                <li>Author: Vempala, Santosh</li>
+            
+            
+                <li>Journal&nbsp;title: In FOCS</li>
+            
+            
+                <li>Volume: 616</li>
+                
+                
+            
+                <li>Pages: 623</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1999</li>
+            
+            </ul><br />
+        
+            <li><i>[18] Rosa Arriaga and Santosh Vempala. An algorithmic theory of learning: Robust concepts and random projection. Machine Learning, 63(2):161{182, 2006.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: An algorithmic theory of learning: Robust concepts and random projection</li>
+            
+            
+                <li>Author: Arriaga, Rosa</li>
+            
+                <li>Author: Vempala, Santosh</li>
+            
+            
+                <li>Journal&nbsp;title: Machine Learning</li>
+            
+            
+                <li>Volume: 63</li>
+                
+            
+                <li>Issue: 2</li>
+                
+            
+                <li>Pages: 182</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2006</li>
+            
+            </ul><br />
+        
+            <li><i>[19] B. Babcock, S. Babu, M. Datar, R. Motwani, and J. Widom. Models and issues in data stream systems. In PODS, pages 1{16, Madison, WI, 2002.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Models and issues in data stream systems</li>
+            
+            
+                <li>Author: Babcock, B.</li>
+            
+                <li>Author: Babu, S.</li>
+            
+                <li>Author: Datar, M.</li>
+            
+                <li>Author: Motwani, R.</li>
+            
+                <li>Author: Widom, J.</li>
+            
+                <li>Author: Madison, WI</li>
+            
+            
+                <li>Journal&nbsp;title: In PODS</li>
+            
+            
+                <li>Volume: 1</li>
+                
+                
+            
+                <li>Pages: 16</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2002</li>
+            
+            </ul><br />
+        
+            <li><i>[20] Maria-Florina Balcan, Avrim Blum, and Santosh Vempala. On kernels, margins, and low-dimensional mappings. In ALT, pages 194 { 205, Padova, Italy, 2004.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: On kernels, margins, and low-dimensional mappings</li>
+            
+            
+                <li>Author: Maria-Florina, Balcan</li>
+            
+                <li>Author: Vempala, Santosh</li>
+            
+                <li>Author: Padova</li>
+            
+            
+                <li>Journal&nbsp;title: In ALT</li>
+            
+            
+                <li>Volume: 194</li>
+                
+                
+            
+                <li>Pages: 205</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2004</li>
+            
+            </ul><br />
+        
+            <li><i>[21] O.E. Barndor -Nielsen and D. R. Cox. Inference and Asymptotics. Chapman & Hall, London, UK, 1994.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Inference and Asymptotics</li>
+            
+            
+                <li>Author: Barndor -Nielsen, O.E.</li>
+            
+                <li>Author: Cox, D. R.</li>
+            
+            
+                
+                
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1994</li>
+            
+            </ul><br />
+        
+            <li><i>[22] V. D. Barnett. Evaluation of the maximum-likelihood estimator where the likelihood equation has multiple roots. Biometrika, 53(1/2):151{165, 1966.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Evaluation of the maximum-likelihood estimator where the likelihood equation has multiple roots</li>
+            
+            
+                <li>Author: Barnett, V. D.</li>
+            
+            
+                <li>Journal&nbsp;title: Biometrika</li>
+            
+            
+                <li>Volume: 53</li>
+                
+            
+                <li>Issue: 1</li>
+                
+            
+                <li>Pages: 165</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1966</li>
+            
+            </ul><br />
+        
+            <li><i>[23] M. S. Bartlett. Approximate con dence intervals, II. Biometrika, 40(3/4):306{317, 1953.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Approximate con dence intervals, II</li>
+            
+            
+                <li>Author: Bartlett, M. S.</li>
+            
+            
+            
+                <li>Volume: 40</li>
+                
+            
+                <li>Issue: 3</li>
+                
+            
+                <li>Pages: 317</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1953</li>
+            
+            </ul><br />
+        
+            <li><i>[24] Arindam Bhattacharjee, William G. Richards, Jane Staunton, Cheng Li, Stefano Monti, Priya Vasa, Christine Ladd, Javad Beheshti, Raphael Bueno, Michael Gillette, Massimo Loda, Gri n Weber, Eugene J. Mark, Eric S. Lander, Wing Wong, Bruce E. Johnson, Todd R. Golub, David J. Sugarbaker, and Matthew Meyerson. Classi cation of human lung carcinomas by mRNA expression pro ling reveals distinct adenocarcinoma subclasses. PNAS, 98(24):13790{13795, 2001.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Classi cation of human lung carcinomas by mRNA expression pro ling reveals distinct adenocarcinoma subclasses</li>
+            
+            
+                <li>Author: Bhattacharjee, Arindam</li>
+            
+                <li>Author: Eugene J. Mark</li>
+            
+                <li>Author: Todd R. Golub, David J.</li>
+            
+                <li>Author: Sugarbaker, Matthew</li>
+            
+                <li>Author: Meyerson</li>
+            
+            
+                <li>Journal&nbsp;title: PNAS</li>
+            
+            
+                <li>Volume: 98</li>
+                
+            
+                <li>Issue: 24</li>
+                
+            
+                <li>Pages: 13795</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2001</li>
+            
+            </ul><br />
+        
+            <li><i>[25] R. N. Bhattacharya and J. K. Ghosh. On the validity of the formal edgeworth expansion. The Annals of Statistics, 6(2):434{451, 1978.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: On the validity of the formal edgeworth expansion</li>
+            
+            
+                <li>Author: Bhattacharya, R. N.</li>
+            
+                <li>Author: Ghosh, J. K.</li>
+            
+            
+                <li>Journal&nbsp;title: The Annals of Statistics</li>
+            
+            
+                <li>Volume: 6</li>
+                
+            
+                <li>Issue: 2</li>
+                
+            
+                <li>Pages: 451</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1978</li>
+            
+            </ul><br />
+        
+            <li><i>[26] Ella Bingham and Heikki Mannila. Random projection in dimensionality reduction: Applications to image and text data. In KDD, pages 245{250, San Francisco, CA, 2001.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Random projection in dimensionality reduction: Applications to image and text data</li>
+            
+            
+                <li>Author: Bingham, Ella</li>
+            
+                <li>Author: Mannila, Heikki</li>
+            
+            
+                <li>Journal&nbsp;title: In KDD</li>
+            
+            
+                <li>Volume: 245</li>
+                
+                
+            
+                <li>Pages: 250</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2001</li>
+            
+            </ul><br />
+        
+            <li><i>[32] Bo Brinkman and Mose Charikar. On the impossibility of dimension reduction in l1. In FOCS, pages 514{523, Cambridge, MA, 2003.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: On the impossibility of dimension reduction in l1</li>
+            
+            
+                <li>Author: Brinkman, Bo</li>
+            
+                <li>Author: Charikar, Mose</li>
+            
+            
+                <li>Journal&nbsp;title: In FOCS</li>
+            
+            
+                <li>Volume: 514</li>
+                
+                
+            
+                <li>Pages: 523</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2003</li>
+            
+            </ul><br />
+        
+            <li><i>[33] Bo Brinkman and Mose Charikar. On the impossibility of dimension reduction in l1. Journal of ACM, 52(2):766{788, 2005.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: On the impossibility of dimension reduction in l1</li>
+            
+            
+                <li>Author: Brinkman, Bo</li>
+            
+                <li>Author: Charikar, Mose</li>
+            
+            
+                <li>Journal&nbsp;title: Journal of ACM</li>
+            
+            
+                <li>Volume: 52</li>
+                
+            
+                <li>Issue: 2</li>
+                
+            
+                <li>Pages: 788</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2005</li>
+            
+            </ul><br />
+        
+            <li><i>[34] Andrei Z. Broder. On the resemblance and containment of documents. In the Compression and Complexity of Sequences, pages 21{29, Positano, Italy, 1997.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: On the resemblance and containment of documents</li>
+            
+            
+                <li>Author: Andrei, Z.</li>
+            
+                <li>Author: Broder</li>
+            
+                <li>Author: Positano</li>
+            
+            
+                <li>Journal&nbsp;title: In the Compression and Complexity of Sequences</li>
+            
+            
+                <li>Volume: 21</li>
+                
+                
+            
+                <li>Pages: 29</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1997</li>
+            
+            </ul><br />
+        
+            <li><i>[35] Andrei Z. Broder. Filtering near-duplicate documents. In FUN, Isola d'Elba, Italy, 1998.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Filtering near-duplicate documents</li>
+            
+            
+                <li>Author: Andrei, Z.</li>
+            
+                <li>Author: Broder</li>
+            
+            
+                <li>Journal&nbsp;title: In FUN, Isola d'Elba</li>
+            
+                
+                
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1998</li>
+            
+            </ul><br />
+        
+            <li><i>[36] Andrei Z. Broder, Moses Charikar, Alan M. Frieze, and Michael Mitzenmacher. Minwise independent permutations (extended abstract). In STOC, pages 327{336, Dallas, TX, 1998.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Minwise independent permutations (extended abstract)</li>
+            
+            
+                <li>Author: Andrei Z. Broder</li>
+            
+                <li>Author: Alan M. Frieze, Michael</li>
+            
+                <li>Author: Mitzenmacher</li>
+            
+            
+                <li>Journal&nbsp;title: In STOC</li>
+            
+            
+                <li>Volume: 327</li>
+                
+                
+            
+                <li>Pages: 336</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1998</li>
+            
+            </ul><br />
+        
+            <li><i>[37] Andrei Z. Broder, Moses Charikar, Alan M. Frieze, and Michael Mitzenmacher. Min-wise independent permutations. Journal of Computer Systems and Sciences, 60(3):630{659, 2000.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Min-wise independent permutations</li>
+            
+            
+                <li>Author: Andrei Z. Broder</li>
+            
+                <li>Author: Alan M. Frieze, Michael</li>
+            
+                <li>Author: Mitzenmacher</li>
+            
+            
+                <li>Journal&nbsp;title: Journal of Computer Systems and Sciences</li>
+            
+            
+                <li>Volume: 60</li>
+                
+            
+                <li>Issue: 3</li>
+                
+            
+                <li>Pages: 659</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2000</li>
+            
+            </ul><br />
+        
+            <li><i>[38] Andrei Z. Broder, Steven C. Glassman, Mark S. Manasse, and Geo rey Zweig. Syntactic clustering of the web. In WWW, pages 1157 { 1166, Santa Clara, CA, 1997.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Geo rey Zweig. Syntactic clustering of the web</li>
+            
+            
+                <li>Author: Andrei Z. Broder</li>
+            
+                <li>Author: Santa, Clara</li>
+            
+            
+                <li>Journal&nbsp;title: In WWW</li>
+            
+            
+                <li>Volume: 1157</li>
+                
+                
+            
+                <li>Pages: 1166</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1997</li>
+            
+            </ul><br />
+        
+            <li><i>[39] Jeremy Buhler and Martin Tompa. Finding motifs using random projections. Journal of Computational Biology, 9(2):225{242, 2002.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Finding motifs using random projections</li>
+            
+            
+                <li>Author: Buhler, Jeremy</li>
+            
+                <li>Author: Tompa, Martin</li>
+            
+            
+                <li>Journal&nbsp;title: Journal of Computational Biology</li>
+            
+            
+                <li>Volume: 9</li>
+                
+            
+                <li>Issue: 2</li>
+                
+            
+                <li>Pages: 242</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2002</li>
+            
+            </ul><br />
+        
+            <li><i>[40] V. V. Buldygin and Yu. V. Kozachenko. Metric Characterization of Random Variables and Random Processes. American Mathematical Society, Providence, RI, 2000.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Metric Characterization of Random Variables</li>
+            
+            
+                <li>Author: Buldygin, V. V.</li>
+            
+                <li>Author: Kozachenko, Yu. V.</li>
+            
+                <li>Author: Processes, Random</li>
+            
+            
+                <li>Journal&nbsp;title: American Mathematical Society</li>
+            
+                
+                
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2000</li>
+            
+            </ul><br />
+        
+            <li><i>[41] Emmanuel J. Candes, Justin Romberg, and Terence Tao. Robust uncertainty principles: exact signal reconstruction from highly incomplete frequency information. IEEE Trans. Inform. Theory, 52(2):489{509, 2006.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Robust uncertainty principles: exact signal reconstruction from highly incomplete frequency information</li>
+            
+            
+                <li>Author: Emmanuel, J.</li>
+            
+                <li>Author: Candes, Terence</li>
+            
+                <li>Author: Tao</li>
+            
+            
+                <li>Journal&nbsp;title: IEEE Trans. Inform. Theory</li>
+            
+            
+                <li>Volume: 52</li>
+                
+            
+                <li>Issue: 2</li>
+                
+            
+                <li>Pages: 509</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2006</li>
+            
+            </ul><br />
+        
+            <li><i>[42] Olivier Chapelle, Patrick Ha ner, and Vladimir N. Vapnik. Support vector machines for histogram-based image classi cation. IEEE Trans. Neural Networks, 10(5):1055{ 1064, 1999.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Support vector machines for histogram-based image classi cation</li>
+            
+            
+                <li>Author: Olivier, Chapelle</li>
+            
+                <li>Author: Vladimir, N.</li>
+            
+                <li>Author: Vapnik</li>
+            
+            
+                <li>Journal&nbsp;title: IEEE Trans. Neural Networks</li>
+            
+            
+                <li>Volume: 10</li>
+                
+            
+                <li>Issue: 5</li>
+                
+            
+                <li>Pages: 1064</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1999</li>
+            
+            </ul><br />
+        
+            <li><i>[43] Moses S. Charikar. Similarity estimation techniques from rounding algorithms. In STOC, pages 380{388, Montreal, Quebec, Canada, 2002.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Similarity estimation techniques from rounding algorithms</li>
+            
+            
+                <li>Author: Moses, S.</li>
+            
+                <li>Author: Charikar</li>
+            
+            
+                <li>Journal&nbsp;title: In STOC</li>
+            
+            
+                <li>Volume: 380</li>
+                
+                
+            
+                <li>Pages: 388</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2002</li>
+            
+            </ul><br />
+        
+            <li><i>[44] Surajit Chaudhuri, Rajeev Motwani, and Vivek R. Narasayya. On random sampling over joins. In SIGMOD, pages 263{274, Philadelphia, PA, 1999.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: On random sampling over joins</li>
+            
+            
+                <li>Author: Surajit, Chaudhuri</li>
+            
+                <li>Author: Vivek, R.</li>
+            
+                <li>Author: Narasayya</li>
+            
+            
+                <li>Journal&nbsp;title: In SIGMOD</li>
+            
+            
+                <li>Volume: 263</li>
+                
+                
+            
+                <li>Pages: 274</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1999</li>
+            
+            </ul><br />
+        
+            <li><i>[45] Bin Chen, Peter Haas, and Peter Scheuermann. New two-phase sampling based algorithm for discovering association rules. In KDD, pages 462{468, Edmonton, Alberta, Canada, 2002.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: New two-phase sampling based algorithm for discovering association rules</li>
+            
+            
+                <li>Author: Bin, Chen</li>
+            
+                <li>Author: Haas, Peter</li>
+            
+                <li>Author: Scheuermann, Peter</li>
+            
+            
+                <li>Journal&nbsp;title: In KDD</li>
+            
+            
+                <li>Volume: 462</li>
+                
+                
+            
+                <li>Pages: 468</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2002</li>
+            
+            </ul><br />
+        
+            <li><i>[55] Sanjoy Dasgupta and Anupam Gupta. An elementary proof of a theorem of Johnson and Lindenstrauss. Random Structures and Algorithms, 22(1):60 { 65, 2003.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: An elementary proof of a theorem of Johnson and Lindenstrauss</li>
+            
+            
+                <li>Author: Dasgupta, Sanjoy</li>
+            
+                <li>Author: Gupta, Anupam</li>
+            
+            
+                <li>Journal&nbsp;title: Random Structures and Algorithms</li>
+            
+            
+                <li>Volume: 22</li>
+                
+            
+                <li>Issue: 1</li>
+                
+            
+                <li>Pages: 65</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2003</li>
+            
+            </ul><br />
+        
+            <li><i>[56] Mayur Datar, Nicole Immorlica, Piotr Indyk, and Vahab S. Mirrokn. Localitysensitive hashing scheme based on p-stable distributions. In SCG, pages 253 { 262, Brooklyn, NY, 2004.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Localitysensitive hashing scheme based on p-stable distributions</li>
+            
+            
+                <li>Author: Mayur, Datar</li>
+            
+                <li>Author: Vahab, S.</li>
+            
+                <li>Author: Mirrokn</li>
+            
+                <li>Author: Brooklyn</li>
+            
+            
+                <li>Journal&nbsp;title: In SCG</li>
+            
+            
+                <li>Volume: 253</li>
+                
+                
+            
+                <li>Pages: 262</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2004</li>
+            
+            </ul><br />
+        
+            <li><i>[57] Herbert A. David. Order Statistics. John Wiley & Sons, Inc., New York, NY, second edition, 1981.</i></li>
+            <ul type="DISC">
+            
+            
+                <li>Author: Herbert, A. David. Order</li>
+            
+                <li>Author: Statistics</li>
+            
+            
+                
+                
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1981</li>
+            
+            </ul><br />
+        
+            <li><i>[58] Scott Deerwester, Susan T. Dumais, George W. Furnas, and Thomas K. Landauer. Indexing by latent semantic analysis. Journal of the American Society for Information Science, 41(6):391{407, 1999.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Indexing by latent semantic analysis</li>
+            
+            
+                <li>Author: Deerwester, Scott</li>
+            
+                <li>Author: Thomas, K.</li>
+            
+                <li>Author: Landauer</li>
+            
+            
+                <li>Journal&nbsp;title: Journal of the American Society for Information Science</li>
+            
+            
+                <li>Volume: 41</li>
+                
+            
+                <li>Issue: 6</li>
+                
+            
+                <li>Pages: 407</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1999</li>
+            
+            </ul><br />
+        
+            <li><i>[66] Michalis Faloutsos, Petros Faloutsos, and Christos Faloutsos. On power-law relationships of the Internet topology. In SIGMOD, pages 251{262, Cambridge,MA, 1999.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: On power-law relationships of the Internet topology</li>
+            
+            
+                <li>Author: Michalis, Faloutsos</li>
+            
+                <li>Author: Faloutsos, Christos</li>
+            
+            
+                <li>Journal&nbsp;title: In SIGMOD</li>
+            
+            
+                <li>Volume: 251</li>
+                
+                
+            
+                <li>Pages: 262</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1999</li>
+            
+            </ul><br />
+        
+            <li><i>[67] Eugene F. Fama and Richard Roll. Some properties of symmetric stable distributions. Journal of the American Statistical Association, 63(323):817{836, 1968.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Some properties of symmetric stable distributions</li>
+            
+            
+                <li>Author: Eugene, F.</li>
+            
+                <li>Author: Fama, Richard</li>
+            
+                <li>Author: Roll</li>
+            
+            
+                <li>Journal&nbsp;title: Journal of the American Statistical Association</li>
+            
+            
+                <li>Volume: 63</li>
+                
+            
+                <li>Issue: 323</li>
+                
+            
+                <li>Pages: 836</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1968</li>
+            
+            </ul><br />
+        
+            <li><i>[68] Eugene F. Fama and Richard Roll. Parameter estimates for symmetric stable distributions. Journal of the American Statistical Association, 66(334):331{338, 1971.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Parameter estimates for symmetric stable distributions</li>
+            
+            
+                <li>Author: Eugene, F.</li>
+            
+                <li>Author: Fama</li>
+            
+            
+                <li>Journal&nbsp;title: Journal of the American Statistical Association</li>
+            
+            
+                <li>Volume: 66</li>
+                
+            
+                <li>Issue: 334</li>
+                
+            
+                <li>Pages: 338</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1971</li>
+            
+            </ul><br />
+        
+            <li><i>[69] Joan Feigenbaum, Sampath Kannan, Martin Strauss, and Mahesh Viswanathan. An approximate l1-di erence algorithm for massive data streams. In FOCS, pages 501{ 511, New York, 1999.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: An approximate l1-di erence algorithm for massive data streams</li>
+            
+            
+                <li>Author: Joan, Feigenbaum</li>
+            
+                <li>Author: Strauss, Martin</li>
+            
+                <li>Author: Viswanathan, Mahesh</li>
+            
+            
+                <li>Journal&nbsp;title: In FOCS</li>
+            
+            
+                <li>Volume: 501</li>
+                
+                
+            
+                <li>Pages: 511</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1999</li>
+            
+            </ul><br />
+        
+            <li><i>[70] William Feller. An Introduction to Probability Theory and Its Applications (Volume II). John Wiley & Sons, New York, NY, second edition, 1971.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: An Introduction to Probability Theory and Its Applications (Volume II)</li>
+            
+            
+                <li>Author: Feller, William</li>
+            
+            
+                
+                
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1971</li>
+            
+            </ul><br />
+        
+            <li><i>[71] Marin Ferecatu, Michel Crucianu, and Nozha Boujemaa. Retrieval of di cult image classes using SVD-based relevance feedback. In ACM SIGMM International Workshop on Multimedia Information Retrieval, pages 23{30, New York, NY, 2004.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Retrieval of di cult image classes using SVD-based relevance feedback</li>
+            
+            
+                <li>Author: Marin, Ferecatu</li>
+            
+                <li>Author: Boujemaa, Nozha</li>
+            
+            
+                <li>Journal&nbsp;title: In ACM SIGMM International Workshop on Multimedia Information Retrieval</li>
+            
+            
+                <li>Volume: 23</li>
+                
+                
+            
+                <li>Pages: 30</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2004</li>
+            
+            </ul><br />
+        
+            <li><i>[77] P. Frankl and H. Maehara. The Johnson-Lindenstrauss lemma and the sphericity of some graphs. Journal of Combinatorial Theory A, 44(3):355{362, 1987.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: The Johnson-Lindenstrauss lemma and the sphericity of some graphs</li>
+            
+            
+                <li>Author: Frankl, P.</li>
+            
+                <li>Author: Maehara, H.</li>
+            
+            
+                <li>Journal&nbsp;title: Journal of Combinatorial Theory A</li>
+            
+            
+                <li>Volume: 44</li>
+                
+            
+                <li>Issue: 3</li>
+                
+            
+                <li>Pages: 362</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1987</li>
+            
+            </ul><br />
+        
+            <li><i>[78] Jerome H. Friedman. Greedy function approximation: A gradient boosting machine. The Annals of Statistics, 29(5):1189{1232, 2001.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Greedy function approximation: A gradient boosting machine</li>
+            
+            
+                <li>Author: Jerome, H.</li>
+            
+                <li>Author: Friedman</li>
+            
+            
+                <li>Journal&nbsp;title: The Annals of Statistics</li>
+            
+            
+                <li>Volume: 29</li>
+                
+            
+                <li>Issue: 5</li>
+                
+            
+                <li>Pages: 1232</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2001</li>
+            
+            </ul><br />
+        
+            <li><i>[79] Jerome H. Friedman, F. Baskett, and L. Shustek. An algorithm for nding nearest neighbors. IEEE Transactions on Computers, 24:1000{1006, 1975.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: An algorithm for nding nearest neighbors</li>
+            
+            
+                <li>Author: Jerome, H.</li>
+            
+                <li>Author: Friedman, F.</li>
+            
+                <li>Author: Baskett, L.</li>
+            
+                <li>Author: Shustek</li>
+            
+            
+                <li>Journal&nbsp;title: IEEE Transactions on Computers</li>
+            
+            
+                <li>Volume: 24</li>
+                
+                
+            
+                <li>Pages: 1000</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1975</li>
+            
+            </ul><br />
+        
+            <li><i>[89] Taher H. Haveliwala, Aristides Gionis, and Piotr Indyk. Scalable techniques for clustering the web. In WebDB, pages 129{134, 2000.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Scalable techniques for clustering the web</li>
+            
+            
+                <li>Author: Taher, H.</li>
+            
+                <li>Author: Haveliwala, Piotr</li>
+            
+                <li>Author: Indyk</li>
+            
+            
+                <li>Journal&nbsp;title: In WebDB</li>
+            
+            
+                <li>Volume: 129</li>
+                
+                
+            
+                <li>Pages: 134</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2000</li>
+            
+            </ul><br />
+        
+            <li><i>[90] Taher H. Haveliwala, Aristides Gionis, Dan Klein, and Piotr Indyk. Evaluating strategies for similarity search on the web. In WWW, pages 432{442, Honolulu, HI, 2002.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Evaluating strategies for similarity search on the web</li>
+            
+            
+                <li>Author: Taher, H.</li>
+            
+                <li>Author: Haveliwala, Piotr</li>
+            
+                <li>Author: Indyk</li>
+            
+                <li>Author: Honolulu, HI</li>
+            
+            
+                <li>Journal&nbsp;title: In WWW</li>
+            
+            
+                <li>Volume: 432</li>
+                
+                
+            
+                <li>Pages: 442</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2002</li>
+            
+            </ul><br />
+        
+            <li><i>[91] Monika R. Henzinger, Prabhakar Raghavan, and Sridhar Rajagopalan. Computing on data streams. American Mathematical Society, Boston, MA, USA, 1999.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Computing on data streams</li>
+            
+            
+                <li>Author: Monika, R.</li>
+            
+                <li>Author: Henzinger, Sridhar</li>
+            
+                <li>Author: Rajagopalan</li>
+            
+            
+                <li>Journal&nbsp;title: American Mathematical Society</li>
+            
+                
+                
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1999</li>
+            
+            </ul><br />
+        
+            <li><i>[92] Christian Hidber. Online association rule mining. In SIGMOD, pages 145{156, Philadelphia PA, 1999.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Online association rule mining</li>
+            
+            
+                <li>Author: Hidber, Christian</li>
+            
+                <li>Author: Philadelphia, PA</li>
+            
+            
+                <li>Journal&nbsp;title: In SIGMOD</li>
+            
+            
+                <li>Volume: 145</li>
+                
+                
+            
+                <li>Pages: 156</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1999</li>
+            
+            </ul><br />
+        
+            <li><i>[93] David V. Hinkley. Likelihood inference about location and scale parameters. Biometrika, 65(2):253{261, 1978.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Likelihood inference about location and scale parameters</li>
+            
+            
+                <li>Author: David, V.</li>
+            
+                <li>Author: Hinkley</li>
+            
+            
+                <li>Journal&nbsp;title: Biometrika</li>
+            
+            
+                <li>Volume: 65</li>
+                
+            
+                <li>Issue: 2</li>
+                
+            
+                <li>Pages: 261</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1978</li>
+            
+            </ul><br />
+        
+            <li><i>[94] Albert Sydney Hornby, editor. Oxford Advanced Learner's Dictionary of Current English. Oxford University Press, Oxford, UK, fourth edition, 1989.</i></li>
+            <ul type="DISC">
+            
+            
+                <li>Author: Albert, Sydney Hornby</li>
+            
+            
+                <li>Journal&nbsp;title: Oxford Advanced Learner's Dictionary of Current English</li>
+            
+                
+                
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1989</li>
+            
+            </ul><br />
+        
+            <li><i>[103] W. B. Johnson and J. Lindenstrauss. Extensions of Lipschitz mapping into Hilbert space. Contemporary Mathematics, 26:189{206, 1984.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Extensions of Lipschitz mapping into Hilbert space</li>
+            
+            
+                <li>Author: Johnson, W. B.</li>
+            
+                <li>Author: Lindenstrauss, J.</li>
+            
+            
+                <li>Journal&nbsp;title: Contemporary Mathematics</li>
+            
+            
+                <li>Volume: 26</li>
+                
+                
+            
+                <li>Pages: 189</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1984</li>
+            
+            </ul><br />
+        
+            <li><i>[114] Henry C.M. Leung, Francis Y.L. Chin, S.M. Yiu, Roni Rosenfeld, and W.W. Tsang. Finding motifs with insu cient number of strong binding sites. Journal of Computational Biology, 12(6):686{701, 2005.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Finding motifs with insu cient number of strong binding sites</li>
+            
+            
+                <li>Author: Henry C.M. Leung</li>
+            
+                <li>Author: Francis Y.L. Chin, S.M.</li>
+            
+                <li>Author: Yiu, W.W.</li>
+            
+                <li>Author: Tsang</li>
+            
+            
+                <li>Journal&nbsp;title: Journal of Computational Biology</li>
+            
+            
+                <li>Volume: 12</li>
+                
+            
+                <li>Issue: 6</li>
+                
+            
+                <li>Pages: 701</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2005</li>
+            
+            </ul><br />
+        
+            <li><i>[124] Ping Li, Trevor J. Hastie, and Kenneth W. Church. Improving random projections using marginal information. In COLT, pages 635{649, Pittsburgh, PA, 2006.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Improving random projections using marginal information</li>
+            
+            
+                <li>Author: Li, Ping</li>
+            
+                <li>Author: Hastie, Trevor J.</li>
+            
+                <li>Author: Church, Kenneth W.</li>
+            
+                <li>Author: Pittsburgh</li>
+            
+            
+                <li>Journal&nbsp;title: In COLT</li>
+            
+            
+                <li>Volume: 635</li>
+                
+                
+            
+                <li>Pages: 649</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2006</li>
+            
+            </ul><br />
+        
+            <li><i>[125] Ping Li, Trevor J. Hastie, and Kenneth W. Church. Very sparse random projections. In KDD, pages 287{296, Philadelphia, PA, 2006.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Very sparse random projections</li>
+            
+            
+                <li>Author: Li, Ping</li>
+            
+                <li>Author: Hastie, Trevor J.</li>
+            
+                <li>Author: Church, Kenneth W.</li>
+            
+            
+                <li>Journal&nbsp;title: In KDD</li>
+            
+            
+                <li>Volume: 287</li>
+                
+                
+            
+                <li>Pages: 296</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 2006</li>
+            
+            </ul><br />
+        
+            <li><i>[136] Yossi Matias, Je rey Scott Vitter, and Min Wang. Wavelet-based histograms for selectivity estimation. In SIGMOD, pages 448{459, Seattle, WA, 1998.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Je rey Scott Vitter, and</li>
+            
+            
+                <li>Author: Yossi, Matias</li>
+            
+                <li>Author: Wang, Min</li>
+            
+            
+                <li>Journal&nbsp;title: In SIGMOD</li>
+            
+            
+                <li>Volume: 448</li>
+                
+                
+            
+                <li>Pages: 459</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1998</li>
+            
+            </ul><br />
+        
+            <li><i>[159] Kyuseok Shim Sudipto Guha, Rajeev Rastogi. Cure: An e cient clustering algorithm for large databases. In SIGMOD, pages 73{84, Seattle, WA, 1998.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Cure: An e cient clustering algorithm for large databases</li>
+            
+            
+                <li>Author: Shim Sudipto Guha, Kyuseok</li>
+            
+                <li>Author: Rastogi, Rajeev</li>
+            
+            
+                <li>Journal&nbsp;title: In SIGMOD</li>
+            
+            
+                <li>Volume: 73</li>
+                
+                
+            
+                <li>Pages: 84</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1998</li>
+            
+            </ul><br />
+        
+            <li><i>[160] Vivek R. Narasayya Surajit Chaudhuri, Rajeev Motwani. Random sampling for histogram construction: How much is enough? In SIGMOD, pages 436{447, Seattle, WA, 1998.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Random sampling for histogram construction: How much is enough? In SIGMOD</li>
+            
+            
+                <li>Author: Vivek, R.</li>
+            
+                <li>Author: Narasayya Surajit, Chaudhuri</li>
+            
+                <li>Author: Motwani, Rajeev</li>
+            
+            
+            
+                <li>Volume: 436</li>
+                
+                
+            
+                <li>Pages: 447</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1998</li>
+            
+            </ul><br />
+        
+            <li><i>[162] Hannu Toivonen. Sampling large databases for association rules. In VLDB, pages 134{145, Bombay, India, 1996.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Sampling large databases for association rules</li>
+            
+            
+                <li>Author: Toivonen, Hannu</li>
+            
+            
+                <li>Journal&nbsp;title: In VLDB</li>
+            
+            
+                <li>Volume: 134</li>
+                
+                
+            
+                <li>Pages: 145</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1996</li>
+            
+            </ul><br />
+        
+            <li><i>[163] M. C. K. Tweedie. Statistical properties of inverse gaussian distributions. I. The Annals of Mathematical Statistics, 28(2):362{377, 1957.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Statistical properties of inverse gaussian distributions</li>
+            
+            
+                <li>Author: M. C. K. Tweedie</li>
+            
+            
+                <li>Journal&nbsp;title: I. The Annals of Mathematical Statistics</li>
+            
+            
+                <li>Volume: 28</li>
+                
+            
+                <li>Issue: 2</li>
+                
+            
+                <li>Pages: 377</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1957</li>
+            
+            </ul><br />
+        
+            <li><i>[164] M. C. K. Tweedie. Statistical properties of inverse gaussian distributions. II. The Annals of Mathematical Statistics, 28(3):696{705, 1957.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Statistical properties of inverse gaussian distributions</li>
+            
+            
+                <li>Author: M. C. K. Tweedie</li>
+            
+            
+                <li>Journal&nbsp;title: II. The Annals of Mathematical Statistics</li>
+            
+            
+                <li>Volume: 28</li>
+                
+            
+                <li>Issue: 3</li>
+                
+            
+                <li>Pages: 705</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1957</li>
+            
+            </ul><br />
+        
+            <li><i>[165] Santosh Vempala. Random projection: A new approach to VLSI layout. In FOCS, pages 389{395, Palo Alto, CA, 1998.</i></li>
+            <ul type="DISC">
+            
+                <li>Title: Random projection: A new approach to VLSI layout</li>
+            
+            
+                <li>Author: Vempala, Santosh</li>
+            
+                <li>Author: Palo, Alto</li>
+            
+            
+                <li>Journal&nbsp;title: In FOCS</li>
+            
+            
+                <li>Volume: 389</li>
+                
+                
+            
+                <li>Pages: 395</li>
+                
+            
+            
+            
+                <li>Publication&nbsp;date: 1998</li>
+            
+            </ul><br />
