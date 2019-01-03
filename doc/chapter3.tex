@@ -236,6 +236,326 @@ $\mathbf{A} \in \mathbb{R}^{n \times D}$
 $\frac{n(n-1)}{2} < \frac{n^2}{2}$
 جفت فاصله وجود دارد. ما معمولا علاقمندیم که احتمالات دم را به طور همزمان برای همه‌ی جفت‌ها محدود کنیم. 
 
+\section{
+تصویر تصادفی نرمال
+}
+
+برای کاهش بعد در نرم 
+$l_2$
+، روش 
+\textit{
+تصویر تصادفی نرمال
+}
+ماتریس داده‌ی اولیه 
+$\mathbf{A} \in \mathbb{R}^{n \times D}$
+را در ماتریس تصادفی 
+$\mathbf{R} \in \mathbb{R}^{D \times k} (k \ll D)$
+با درایه‌های 
+\lr{i.i.d.}
+از 
+$N(0,1)$
+، تا ماتریس تصویر شده‌ی 
+$\mathbf{B} \in \mathbb{R}^{n \times k}$
+حاصل شود. تحلیل‌های مربوط به تصویر تصادفی نرمال نسبتا ساده است. برای مثال، به شکل سرراستی می‌توان یک نسخه از لم 
+\lr{JL}
+\LTRfootnote{Johnson-Lindenstrauss}
+\cite{litez103}
+را برای حالت 
+$l_2$
+استنتاج کرد.
+
+ما در ابتدا برخی خواص اولیه تصویر تصادفی نرمال را بیان می‌کنیم و سپس بر روی اطلاعات حاشیه تمرکز می‌کنیم تا تخمین‌ها را بهینه کنیم. حاشیه‌ها (به عبارت دیگر، نرم 
+$l_2$
+برای هر خط در 
+$\mathbf{A}$
+)
+معمولا در ابتدا در دسترس هستند (برای مثال، از طریق نرمال سازی داده‌ها). ولی حتی در حالتی که در دسترس نیستند، محاسبه‌ی نرم 
+$l_2$
+برای تمام سطرهای 
+$\mathbf{A}$
+فقط نیازمند یکبار مرور داده‌ها است که هزینه‌ای از 
+$O(nD)$
+دارد که قابل صرفنظر است.
+\footnote{
+این وضعیتی برای زمانی که با جریان داده‌های داینامیک سر و کار داریم اندکی متفاوت است. در جریان‌های داده ما معمولا به دنبال اطلاعات آماری یک جریان داده هستیم تا اختلاف میان دو جریان داده را مد نظر داشته باشیم. به عبارت دیگر، محاسبه نرم 
+$l_2$
+حاشیه‌ای گاهی اوقات هدف اصلی است. به دلیل ذات دینامیک جریان‌های داده (برای مثال، به روز شدن مدام)، محاسبه‌ی حاشیه‌ها می‌تواند پر هزینه باشد.
+}
+از آنجا که اعمال تصویر تصادفی 
+$\mathbf{A} \times \mathbf{R}$
+هم اکنون هزینه‌ای از مرتبه 
+$O(nDk)$
+دارد.
+
+در این بخش، ما این قاعده مرسوم تبعیت در ادبیات تصویر تصادفی 
+\cite{litez166}
+پیروی می‌کنیم و تعریف می‌کنیم
+$\mathbf{B} = \frac{1}{\sqrt{k}} \mathbf{A} \mathbf{R}$.
+
+\subsection{
+مشخصه‌های اصلی
+}
+
+ما فرض می‌کنیم یک ماتریس داده 
+$\mathbf{A} \in \mathbb{R}^{n \times D}$
+و یک ماتریس تصویرگر
+$\mathbf{R} \in \mathbb{R}^{D \times k}$
+که به طور 
+\lr{i.i.d.}
+از 
+$N(0,1)$
+تولید شده است. در نظر می‌گیریم
+$\mathbf{B} = \frac{1}{\sqrt{k}} \mathbf{A} \mathbf{R}$
+.
+در نظر بگیرید
+$u_i^T$
+سطر
+$i$
+ام ماتریس 
+$\mathbf{A}$
+باشد، و سطر متناظر در 
+$\mathbf{B}$
+،
+$v_i^T$
+باشد.
+برای راحتی بر روی دو سطر اول 
+$\mathbf{A}$
+یعنی 
+$u_1$
+و
+$u_2$
+همچنین دو سطر اولیه
+$v_1$
+و 
+$v_2$
+در 
+$\mathbf{B}$
+تمرکز می‌کنیم. تعریف می‌کنیم:
+
+\begin{align}
+a= u_1^T u_2, \; m_1 = \|u_1 \|^2, \; m_2 = \| u_2 \|^2, \; d =  \| u_1 - u_2 \|^2 = m_1 + m_2 - 2a
+\label{eq:1i7}
+\end{align}
+
+به آسانی می‌توانیم نشان دهیم 
+$\| v_1 - v_2 \|$
+، فاصله‌ی 
+$l_2$
+نمونه و 
+$v_1^T v_2$
+ضرب داخلی نمونه، برآوردگرهای نااریبی از 
+$d$
+و 
+$a$
+هستند. لم ۱ واریانس و تابع مشخصه‌ی 
+$v_1^T v_2$
+را مشخص می‌‌کند. اثبات در 
+\cite{li2007stable}
+.
+
+\textbf{لم ۱:}
+$u_1, u_2 \in \mathbb{R}^D$
+داده شده‌اند و یک ماتریس تصادفی
+$\mathbf{R} \in \mathbb{R}^{D \times k}$
+شامل درایه‌های 
+\lr{i.i.d.}
+از نرمال استاندارد
+$N(0,1)$
+. اگر مقادیر 
+$v_1 = \frac{1}{\sqrt{k}} \mathbf{R}^T u_1$
+و 
+$v_2 = \frac{1}{\sqrt{k}} \mathbf{R}^T u_2$
+را تعیین کنیم، داریم:
+
+\begin{align}
+E \big(  \| v_1 - v_2 \|^2 \big) = d, \;\;\; \mathit{Var}\big(\| v_1 - v_2 \|^2\big) = \frac{2}{k} d^2  \label{eq:1i8}\\
+E \big( v_1^T v_2 \big) = a, \;\;\; \mathit{Var} \big(v_1^T v_2 \big) =  \frac{1}{k} \big(m_1 m_2 + a^2\big), \label{eq:1i9}
+\end{align}
+
+سومین ممان مرکزی 
+$v_1^T v_2$
+عبارت است از:
+
+\begin{align}
+E \big( v_1^T v_2 \big)^2 = a, \;\;\; \frac{2a}{k^2} \big( 2 m_1 m_2 + a^2 \big)
+\label{eq:1iA}
+\end{align}
+
+و تابع مولد احتمال برای 
+$v_1^T v_2$
+عبارت است از:
+
+\begin{align}
+E \big( \exp \big( v_1^T v_2 t \big) \big)
+ = \bigg(  1 - \frac{2}{k} at - \frac{1}{k^2} \big( m_1 m_2 - a^2 \big) t^2 \bigg)^{- \frac{k}{2}}
+\label{eq:1iB}
+\end{align}
+
+که 
+$\frac{-k}{\sqrt{m_1 m_2} - a} \leq t \leq \frac{-k}{\sqrt{m_1 m_2} + a}$
+است.
+
+بنابراین، برآوردگرهای نااریبی برای فاصله 
+$l_2$
+$d$
+و ضرب داخلی
+$a$
+به شکل سر راستی عبارت است از:
+
+\begin{align}
+\hat{d}_{MF} = \| v_1 - v_2 \|^2, \;\;\; \mathit{Var} \Big( \hat{d}_{MF} \Big) = \frac{d^2}{k}, \label{eq:1iC}\\
+\hat{a}_{MF} = v_1^T v_2, \;\;\; \mathit{Var} \big( \hat{a}_{MF} \big) = \frac{1}{k} \big( m_1 m_2 + a^2 \big), \label{eq:1iD}
+\end{align}
+
+که اندیس «
+$MF$
+» به معنی «بدون حاشیه»
+\LTRfootnote{margin-free}
+نشان دهنده این است که برآوردگرها از اطلاعات حاشیه‌ای 
+$m_1 = \| u_1 \|^2$
+و 
+$m_2 = \| u_2 \|^2$
+استفاده نمی‌کنند.
+
+به این نکته توجه کنید که، 
+$k \hat{d}_{MF} / d$
+از توزیع 
+$\chi^2$
+با 
+$k$
+درجه آزادی، پیروی می‌کند،
+$\chi_k^2$
+. بنابراین، به راحتی می‌توان می‌توانیم این محدوده‌‌های دم را برای لم ۲ اثبات کنیم.
+
+\textbf{
+لم ۲:
+}
+
+\begin{align}
+\mathbf{Pr} \big( \hat{d}_{MF} - d > \epsilon d) \leq \exp \Bigg( - \frac{k}{2} \big( \epsilon - \log( 1+ \epsilon) \big) \Bigg), \;\;\; \epsilon > 0 
+\label{eq:1iE} \\
+\mathbf{Pr} \big( \hat{d}_{MF} - d < -\epsilon d) \leq \exp \Bigg( - \frac{k}{2} \big( -\epsilon - \log( 1 - \epsilon) \big) \Bigg), \;\;\; 0 < \epsilon < 1 
+\label{eq:1iF} 
+\end{align}
+
+\textbf{
+اثبات:
+}
+
+از آنجا که 
+$k \hat{d}_{MF} / d \sim \chi_k^2 $
+، بر اساس نام مساوی چرنوف
+\LTRfootnote{Chernoff inequality}
+\cite{litez46}
+، برای هر 
+$t > 0$ 
+داریم:
+
+\begin{align}
+\begin{split}
+\mathbf{Pr} \big( \hat{d}_{MF} - d > \epsilon d) = 
+\mathbf{Pr} \big( k \hat{d}_{MF} / d > k(1+\epsilon) \big) \\
+\leq 
+\frac{E\bigg( \exp (k \hat{d}_{MF} /dt \bigg) }{\exp \big( (1+\epsilon ) kt \big) } =
+\exp \Bigg( - \frac{k}{2} \big( \log (1-2t) + 2(1 + \epsilon) t \big) \Bigg)
+\end{split}
+\label{eq:1iG}
+\end{align}
+
+که در 
+$t = t_{NR} = \frac{\epsilon}{2(1+\epsilon)}$
+و بنابراین برای هر 
+$\epsilon > 0$
+داریم:
+
+\begin{align}
+\mathbf{Pr} \big( \hat{d}_{MF} - d > \epsilon d) \leq \exp \left( -\frac{k}{2} \left( \epsilon - \log \left( 1 + \epsilon \right) \right) \right)
+\label{eq:1iH}
+\end{align}
+
+ما می‌توانیم به طور مشابه برای دیگر محدوده‌ی دم 
+$\mathbf{Pr} \big( \hat{d}_{MF} - d < -\epsilon d)$
+هم اثبات کنیم.
+$\blacksquare$
+
+\bigskip
+
+برای راحتی مرسوم است که محدوده دم را در لم ۲ به صورت متقارن 
+$\mathbf{Pr} \left( \left| \hat{d}_{MF} - d \right| > \epsilon d \right)$
+نوشته شود. نامساوی‌های ساده‌ای برای 
+$\log(1+\epsilon)$
+و 
+$\log(1-\epsilon)$
+نتیجه می‌دهد:
+
+\begin{align}
+\mathbf{Pr} \left( \left| \hat{d}_{MF} - d \right| \geq \epsilon d \right) \leq 2 \exp \left( - \frac{k}{4} \epsilon^2 + \frac{k}{6} \epsilon^3 \right),\;\; 0 < \epsilon < 1
+\label{eq:1iI}
+\end{align}
+
+از آنجا که 
+$\mathbf{A} \in \mathbb{R}^{n \times D}$
+تعداد 
+$n$ 
+سطر دارد. به عبارت دیگر 
+$\frac{n(n-1)}{2}$
+جفت. ما باید احتمال دم را به طور همزمان برای همه‌ی جفت‌ها محدود کنیم. با استفاده از محدوده تجمیعی بنفرونی
+\LTRfootnote{Benferroni union bound}
+کافی است که:
+
+\begin{align}
+\frac{n^2}{2} \mathbf{Pr} \left( \left| \hat{d}_{MF} - d \right| \geq \epsilon d \right) \leq \delta
+\label{eq:1iJ}
+\end{align}
+
+به عبارت دیگر کافی است اگر:
+
+\begin{align}
+\frac{n^2}{2} 2 \exp \left( - \frac{k}{4} \epsilon^2 + \frac{k}{6} \epsilon^3 \right) \leq \delta 
+\Rightarrow
+k \geq \frac{2 \log n - \log \delta}{\epsilon^2 / 4 - \epsilon^3 / 6}
+\label{eq:1iL}
+\end{align}
+
+بنابراین ما یک نسخه‌ای از لم 
+\lr{JL}
+را نشان داده‌ایم.
+
+\textbf{
+لم ۳:
+}
+اگر 
+$k \geq \frac{2 \log n - \log \delta}{\epsilon^2 / 4 - \epsilon^3 / 6} $
+پس با حداقل احتمال 
+$1-\delta$
+، فاصله 
+$l_2$
+بین هر جفت از داده‌ها (میان 
+$n$
+نقطه) می‌تواند با ضریب اطمینان
+$1 \pm \epsilon$
+با استفاده فاصله‌ی 
+$l_2$
+در داده‌های تصویر شده بعد از تصویر تصافی نرمال، تخمین زده شود.
+$0 < \delta < 1, 0 < \epsilon < 1$
+.
+$\blacksquare$
+\bigskip
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
