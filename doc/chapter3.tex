@@ -707,7 +707,98 @@ $g > 0$
 \label{eq:1iN}
 \end{align}
 
+می‌توان مقدار بهینه‌ی 
+$g^2$ 
+را از تعریف 
+$T^2(x)$
+با استفاده از فرمول زیر بدست آورد.
 
+\begin{align}
+T^2(x) = \sup_{t \neq 0} \frac{2 \log \mathrm{E}\left(\exp(xt)\right)}{t^2}
+\label{eq:1iP}
+\end{align}
+
+توجه کنید که 
+$T^2(x)$
+فقط یک نمادگذاری برای مقدار ثابت بهینه‌ی زیرگوسی یک متغییر تصادفی 
+$x$
+است (و نه یک نمونه مشخص از 
+$x$
+).
+
+برخی از ویژگی‌های اولیه‌ی توزیع‌های زیرگوسی:
+
+\begin{itemize}
+\item
+اگر 
+$x$
+زیر گوسی باشد آنگاه 
+$\mathrm{E}(x) = 0$
+و 
+$\mathrm{E}(x^2) \leq T^2(x)$
+. برای هر مقدار ثابت 
+$c$
+، 
+$T^2(cx) = c^2T^2(x)$
+. و
+\begin{align}
+\mathbf{Pr}(|x| > t) \leq 2 \exp \left( - \frac{t^2}{2T^2(x)} \right)
+\label{eq:1iQ}
+\end{align}
+\item
+اگر 
+$x_1, x_2, \ldots, x_D$
+زیرگوسی مستقل باشند، آنگاه
+$\sum_{i=1}^D x_i$
+زیرگوسی است.
+
+\begin{align}
+T^2 \left( \sum_{i=1}^D x_i \right) \leq \sum_{i=1}^D T^2(x_i)
+\label{eq:1iR}
+\end{align}
+\item
+اگر 
+$x$
+زیرگوسی باشد، آنگاه برای همه‌ی 
+$t \in [0,1)$
+،
+\begin{align}
+\mathbf{E} \left( \exp \left( \frac{x^2 t}{2 T^2(x)} \right) \right) \leq (1-t)^{- \frac{1}{2}}
+\label{eq:1iS}
+\end{align}
+
+\cite{litez2, litez3}
+همچنین 
+\autoref{eq:1iS}
+را برای توزیع ویژه‌ی
+\autoref{eq:1iM}
+بدست آورده‌اند. یک متغییر تصادفی زیرگوسی
+$x$
+صریحا زیرگوسی است اگر 
+$\mathrm{E}(x^2) = T^2(x)$
+\item
+اگر 
+$x$
+صریحا زیر گوسی باشد، آنگاه 
+‌$\mathrm{E}(x^3)=0$
+و کشیدگی
+\LTRfootnote{kurtosis}
+غیر مثبت خواهد بود، به عبارت دیگر 
+$\frac{\mathrm{E}(x^4)}{\mathrm{E}^2(x^2)} - 3 \leq 0$
+.
+\item
+اگر
+$x_1, x_2, \ldots, x_D$
+صریحا زیرگوسی مستقل باشند، آنگاه
+$\sum_{i=1}^D x_i$
+صریحا زیرگوسی است.
+
+\begin{align}
+T^2 \left( \sum_{i=1}^D x_i \right) = \sum_{i=1}^D T^2(x_i)
+= \sum_{i=1}^D \mathbf{E} \left( x_i^2 \right)
+\label{eq:1iR}
+\end{align}
+\end{itemize}
 
 
 
