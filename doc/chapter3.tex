@@ -2,41 +2,15 @@
 تصویر تصادفی پایدار
 }
 
-روش تصویر تصادفی پایدار%
-\LTRfootnote{Stable Random Projections}
+روش تصویر تصادفی پایدار(%
+\autoref{ft:stp})
 \cite{litez116, litez166, litez19, litez99, litez96, litez104}
-یک روش پرکاربرد در داده‌کاوی و یادگیری ماشین است. با این روش به طور کار 
+یک روش پرکاربرد در داده‌کاوی و یادگیری ماشین است. با این روش به طور کارا فاصله
 $l_\alpha (0 < \alpha \leq 2)$
-فاصله در داده‌های حجیم (برای مثال: وب یا جریان‌های داده‌ی حجیم) محاسبه می‌شود. در این روش حافظه‌ی کمی استفاده شده و فقط یک بار پایش داده‌ها کافی است. 
-
-\begin{figure}[h]
-\centering
-\begin{latin}
-\begin{tikzpicture}
-\fill[black!50!white] (0,1) rectangle (4,4);
-\node at (2,2.5) [rectangle,preaction={fill=black!50},font={A}] {};
-\node at (4.5,2.5) [rectangle,preaction={fill=black!0},font={$\times$}] {};
-\fill[black!40!white] (5,0) rectangle (6,5);
-\node at (5.5,2.5) [rectangle,preaction={fill=black!40},font={R}] {};
-\node at (6.5,2.5) [rectangle,preaction={fill=black!0},font={=}] {};
-\fill[black!60!white] (7,1) rectangle (8,4);
-\node at (7.5,2.5) [rectangle,preaction={fill=black!60},font={B}] {};
-\end{tikzpicture}
-\end{latin}
-\caption{
-روش تصویر تصافی پایدار ماتریس داده‌ی 
-$\mathbf{A} \in \mathbb{R}^{n \times D}$
-را در یک ماتریس تصادفی
-$\mathbf{R} \in \mathbb{R}^{D \times k}$
-ضرب می‌کند تا ماتریس تصویر شده‌ی 
-$\mathbf{B} = \mathbf{AR} \in \mathbb{R}^{n \times k}$
-حاصل شود.
-}
-\label{fig:randomprojection}
-\end{figure}
+در داده‌های حجیم (برای مثال: وب یا جریان‌های داده‌ی حجیم) محاسبه می‌شود. در این روش حافظه‌ی کمی استفاده شده و فقط یک بار پایش داده‌ها کافی است. 
 
 همانطور که در 
-\autoref{fig:randomprojection}
+\autoref{fig:matrixmulti}
 می‌بینید. ایده تصویر تصادفی پایدار، ضرب ماتریس داده‌ها
 $\mathbf{A} \in \mathbb{R}^{n \times D}$
 در ماتریس تصادفی 
@@ -47,8 +21,7 @@ $\mathbf{B} \in \mathbb{R}^{n \times k}$
 $mathbf{R}$
 به طور 
 \lr{i.i.d.}
-(مستقل و هم توزیع)%
-\LTRfootnote{Independent and Identically distributed}
+(مستقل و هم توزیع)
 از یک توزیع 
 $\alpha$
 -پایدار %
@@ -71,7 +44,7 @@ $0 < \alpha \leq 2$
 ، جزئیات بیشتری در خصوص حالت 
 $l_2$
 مورد بررسی قرار می‌گیرد. سپس ارتقاء روش با استفاده از اطلاعات حاشیه‌ای%
-\LTRfootnote{Marginal information}
+\LTRfootnote{marginal information}
 بررسی می‌شود. در ادامه، تصویر تصادفی نرمال ساده‌سازی می‌شود. این کار با نمونه‌برداری 
 $\mathbf{R}$
 از حالت توزیع گسسته‌ی سه‌نقطه‌ای 
@@ -155,9 +128,7 @@ $z \sim S(\alpha, d)$
 $\alpha = 2$
 (نرمال) و 
 $\alpha = 1$
-(کوچی%
-\LTRfootnote{Cauchy}
-).
+(کوچی).
 
 
 \subsection{
@@ -565,8 +536,7 @@ $l_2$
 
 نمونه‌گیری
 $\mathbf{R}$
-از یک توزیع زیرگوسی%
-\LTRfootnote{sub-Gaussian}
+از یک توزیع زیرگوسی
 هم از نظر تئوری قابل قبول و هم از جنبه‌ی محاسباتی تسهیل کننده است. برای مثال، محدوده‌ی دم زیر گوسی به سادگی به نسخه‌ای از لم
 \lr{JL}
 منتهی می‌شود. 
@@ -1010,10 +980,8 @@ $\alpha = 1, 2$
 $\alpha \neq 1, 2$
 راحت نیستند. 
 
-ما در اینجا برآوردگر‌های مختلفی را بر اساس میانگین هندسی، میانگین هارمونیک%
-\LTRfootnote{Harmonic mean}
- و توان نسبی %
-\LTRfootnote{Fractional power}
+ما در اینجا برآوردگر‌های مختلفی را بر اساس میانگین هندسی، میانگین هارمونیک
+ و توان نسبی 
 بررسی خواهیم کرد.
 
 
