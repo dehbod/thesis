@@ -203,7 +203,7 @@ dataConfiguration <- function(cf, multiVariate = FALSE) {
   
   dClassMean <- matrix(0, nrow = cf$nClass, ncol = cf$nDimention  ,byrow = TRUE)
   theta <- 2 * pi / cf$nClass
-  radious <- 10
+  radious <- 5
   for(i in 1:cf$nClass) {
     dClassMean[i, 1] <- radious * cos(theta * i)
     dClassMean[i, 2] <- radious * sin(theta * i)
@@ -253,4 +253,25 @@ randCovMat <- function(nd, sdev = NULL) {
   }
   msdev <- diag(nd) * sdev
   out <- msdev %*% out %*% msdev
+}
+
+normalizeData <- function(d) {
+  d <- apply(d, 2, function(x) {(x-mean(x))/sd(x)})
+  d
+}
+
+ARIreport <- function(d, tDimention = 2, alpha = 2) {
+  
+  nClass <- length(unique(d$class))
+  
+  cl <- kmeans(d$data, nClass, nstart = 20, iter.max = 100)
+  ari_d <- (adjustedRandIndex(d$class, cl$cluster))
+  
+  d$pdata <- randomProjection(d$data, tDimention, alpha = alpha)
+  clp <- kmeans(d$pdata, nClass, nstart = 20, iter.max = 100)
+  ari_p <- (adjustedRandIndex(d$class, clp$cluster))
+  
+  c_e <- 100 * (ari_d - ari_p)
+  
+  data.frame(ari_d = ari_d, ari_p = ari_p, c_e = c_e)
 }

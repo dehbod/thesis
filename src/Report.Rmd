@@ -1,0 +1,129 @@
+---
+title: "Thesis Reports"
+author: "S.Dehbod"
+date: "January 8, 2019"
+output:
+  pdf_document: 
+    keep_tex: yes
+  html_notebook: default
+---
+
+# For $\alpha$ = 2, p(reduced dimention) = 2
+
+## Tabel
+```{r , include=FALSE}
+rm(list = ls(all.names = TRUE))
+library(kableExtra)
+load('SimData_A2D2_1ig.RData')
+```
+
+```{r, echo=FALSE}
+tabel1 <- data.frame(Dataset = character(length(d)), ARI_d = numeric(length(d)), ARI_p = numeric(length(d)), C_e = numeric(length(d)), stringsAsFactors = FALSE)
+for(dIndex in 1:length(d)){
+td <- d[[dIndex]]
+tabel1[dIndex, ] <- data.frame(Dataset = td$name,
+                                ARI_d  = mean(td$ARIreport[,1]), 
+                                ARI_p  = mean(td$ARIreport[,2]), 
+                                C_e    = round(mean(td$ARIreport[,3])),
+                              stringsAsFactors = FALSE)
+}
+kable(tabel1, "latex", booktabs = T) %>%
+kable_styling(latex_options = "striped")
+```
+
+## Histograms
+```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
+for(dIndex in names(d)){
+hist(d[[dIndex]]$ARIreport[,2], breaks = 50, main = bquote(paste(.(d[[dIndex]]$name),' ',ARI[p])), xlab = 'ARI')
+}
+```
+
+# For $\alpha$ = 2, p(reduced dimention) = 3
+
+## Tabel
+```{r , include=FALSE}
+rm(list = ls(all.names = TRUE))
+library(kableExtra)
+load('SimData_A2D3_1im.RData')
+```
+
+```{r, echo=FALSE}
+tabel1 <- data.frame(Dataset = character(length(d)), ARI_d = numeric(length(d)), ARI_p = numeric(length(d)), C_e = numeric(length(d)), stringsAsFactors = FALSE)
+for(dIndex in 1:length(d)){
+td <- d[[dIndex]]
+tabel1[dIndex, ] <- data.frame(Dataset = td$name,
+                                ARI_d  = mean(td$ARIreport[,1]), 
+                                ARI_p  = mean(td$ARIreport[,2]), 
+                                C_e    = round(mean(td$ARIreport[,3])),
+                              stringsAsFactors = FALSE)
+}
+kable(tabel1, "latex", booktabs = T) %>%
+kable_styling(latex_options = "striped")
+```
+
+## Histograms
+```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
+for(dIndex in names(d)){
+hist(d[[dIndex]]$ARIreport[,2], breaks = 50, main = bquote(paste(.(d[[dIndex]]$name),' ',ARI[p])), xlab = 'ARI')
+}
+```
+
+# For $\alpha$ = 1, p(reduced dimention) = 2
+
+## Tabel
+```{r , include=FALSE}
+rm(list = ls(all.names = TRUE))
+library(kableExtra)
+load('SimData_A1D2_1io.RData')
+```
+
+```{r, echo=FALSE}
+tabel1 <- data.frame(Dataset = character(length(d)), ARI_d = numeric(length(d)), ARI_p = numeric(length(d)), C_e = numeric(length(d)), stringsAsFactors = FALSE)
+for(dIndex in 1:length(d)){
+td <- d[[dIndex]]
+tabel1[dIndex, ] <- data.frame(Dataset = td$name,
+                                ARI_d  = mean(td$ARIreport[,1]), 
+                                ARI_p  = mean(td$ARIreport[,2]), 
+                                C_e    = round(mean(td$ARIreport[,3])),
+                              stringsAsFactors = FALSE)
+}
+kable(tabel1, "latex", booktabs = T) %>%
+kable_styling(latex_options = "striped")
+```
+
+## Histograms
+```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
+for(dIndex in names(d)){
+hist(d[[dIndex]]$ARIreport[,2], breaks = 50, main = bquote(paste(.(d[[dIndex]]$name),' ',ARI[p])), xlab = 'ARI')
+}
+```
+
+# For $\alpha$ = 1, p(reduced dimention) = 3
+
+## Tabel
+```{r , include=FALSE}
+rm(list = ls(all.names = TRUE))
+library(kableExtra)
+load('SimData_A1D3_1in.RData')
+```
+
+```{r, echo=FALSE}
+tabel1 <- data.frame(Dataset = character(length(d)), ARI_d = numeric(length(d)), ARI_p = numeric(length(d)), C_e = numeric(length(d)), stringsAsFactors = FALSE)
+for(dIndex in 1:length(d)){
+td <- d[[dIndex]]
+tabel1[dIndex, ] <- data.frame(Dataset = td$name,
+                                ARI_d  = mean(td$ARIreport[,1]), 
+                                ARI_p  = mean(td$ARIreport[,2]), 
+                                C_e    = round(mean(td$ARIreport[,3])),
+                              stringsAsFactors = FALSE)
+}
+kable(tabel1, "latex", booktabs = T) %>%
+kable_styling(latex_options = "striped")
+```
+
+## Histograms
+```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
+for(dIndex in names(d)){
+hist(d[[dIndex]]$ARIreport[,2], breaks = 50, main = bquote(paste(.(d[[dIndex]]$name),' ',ARI[p])), xlab = 'ARI')
+}
+```
