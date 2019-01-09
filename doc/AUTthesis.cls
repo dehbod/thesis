@@ -220,7 +220,7 @@
 
 %---------------------------------------------------------------------------- end of En table
 \begin{titlepage}
-\vspace{-1cm}{\includegraphics[height=3.8cm]{fa-logo}}
+\vspace{-1cm}{\includegraphics[height=3.8cm]{en-logo}}
 \centerline{\fontsize{18pt}{19pt}\selectfont\bf Amirkabir University of Technology}\space 
 \vskip -.2cm
 \fontsize{16pt}{17pt}\selectfont\bfseries (Tehran Polytechnic)\par \vskip .2cm
@@ -228,9 +228,9 @@
 \fontsize{16pt}{17pt}\selectfont\@latinfaculty\space 
 \vskip 5mm
  \if@mscthesis
-MSc Thesis\par
+M. Sc. Thesis\par
 \else
-Ph.D Thesis\par
+Ph. D Thesis\par
 \fi\par
 \vspace*{2cm}
 %{\fontsize{16pt}{17pt}\selectfont\bfseries Title}%\@latinsubject
