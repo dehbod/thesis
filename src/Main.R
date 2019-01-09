@@ -19,17 +19,22 @@ cf$tDimention <- 2
 
 # Clustering --------------------------------------------------------------
 
-# d <- sampleDataUniNormal(cf)
+d <- sampleDataUniNormal(cf)
 # d <- sampleDataMultiNormal(cf)
-d <- sampleDataUniStable(cf, 1.8)
+# d <- sampleDataUniStable(cf, 1.8)
 # d <- sampleDataMultiStable(cf, 1.8)
 
-d$data <- randomProjection(d$data, cf$tDimention, alpha = 1.8)
-plot(d$data, type = 'p', col = d$class, asp = 1)
 cl <- kmeans(d$data, cf$nClass, nstart = 10)
-points(d$data, pch = 3, col = cl$cluster)
+d$pdata <- randomProjection(d$data, cf$tDimention, alpha = 2)
+clp <- kmeans(d$pdata, cf$nClass, nstart = 10)
+
+plot(d$pdata, type = 'p', col = d$class, asp = 1)
+points(d$pdata, pch = 3, col = cl$cluster)
 
 # Index ----------------------------------------------------------------
 
-print(adjustedRandIndex(d$class, cl$cluster))
+ari_d <- (adjustedRandIndex(d$class, cl$cluster))
+ari_p <- (adjustedRandIndex(d$class, clp$cluster))
+c_p <- 100 * (ari_d - ari_p)
+print(c(ari_d,ari_p, c_p))
 
