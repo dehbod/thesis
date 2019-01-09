@@ -7,4 +7,6 @@
 *.toc
 *.bbl
 *.blg
-
+*.RData
+.Rhistory
+src/Report*
