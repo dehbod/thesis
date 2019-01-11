@@ -10,14 +10,14 @@ output:
 
 # For $\alpha$ = 2, p(reduced dimention) = 2
 
-## Tabel
+## Tabel_A2D2
 ```{r , include=FALSE}
 rm(list = ls(all.names = TRUE))
 library(kableExtra)
 load('SimData_A2D2_1ig.RData')
 ```
 
-```{r, echo=FALSE}
+```{r , echo=FALSE}
 tabel1 <- data.frame(Dataset = character(length(d)), ARI_d = numeric(length(d)), ARI_p = numeric(length(d)), C_e = numeric(length(d)), stringsAsFactors = FALSE)
 for(dIndex in 1:length(d)){
 td <- d[[dIndex]]
