@@ -1,6 +1,8 @@
 rm(list = ls(all.names = TRUE))
 library(beepr)
 
+library(rgl)
+library(stabledist)
 library(MASS)
 library(mclust)
 library(xlsx)

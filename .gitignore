@@ -10,3 +10,4 @@
 *.RData
 .Rhistory
 src/Report*
+doc/Report_files
