@@ -52,15 +52,138 @@ tic()
 for(dIndex in names(d)) {
   out <- data.frame(ari_d = numeric(0), ari_p = numeric(0), c_e = numeric(0))
   for(i in 1:iterations) {
-    out <- rbind(out , ARIreport(d[[dIndex]], tDimention = 2, alpha = 1))
+    out <- rbind(out , ARIreport_s(d[[dIndex]], tDimention = 3, s = 2))
   }
   d[[dIndex]]$ARIreport <- out
+  print(dIndex)
 }
 toc()
 
-save(file = 'SimData_A1D2_1io.RData', list = c('d'))
+save(file = 'SimData_S2D3_1jR.RData', list = c('d'))
 
-beep(4)
+
+
+# vs. reports -------------------------------------------------------------
+
+
+
+# iterations <- 200
+# range <- seq(from = 1, to = 2, by = 0.1)
+# tic()
+# for(dIndex in names(d)) {
+#   out <- data.frame(ari_d = numeric(0), ari_p = numeric(0), c_e = numeric(0))
+#   out1 <- data.frame(alpha = numeric(0),
+#                      ari_d = numeric(0), sd_ari_d = numeric(0),
+#                      ari_p = numeric(0), sd_ari_p = numeric(0),
+#                      c_e = numeric(0), sd_c_e = numeric(0))
+#   for(j in range){
+#     for(i in 1:iterations) {
+#       out <- rbind(out , ARIreport(d[[dIndex]], tDimention = 2, alpha = j))
+#     }
+#     out1 <- rbind(out1, data.frame(alpha = j,
+#                                    ari_d  = mean(out[,1]), sd_ari_d = sd(out[,1]),
+#                                    ari_p  = mean(out[,2]), sd_ari_p = sd(out[,2]),
+#                                    c_e    = mean(out[,3]), sd_c_e = sd(out[,3])
+#                                    )
+#     )
+#   }
+#   d[[dIndex]]$ARIvsAlpha <- out1
+#   print(dIndex)
+# }
+# toc()
+# 
+# save(file = 'SimData_ARIvsAlphaD2_1jM.RData', list = c('d'))
+# 
+# 
+# beep(4)
+# 
+# iterations <- 200
+# range <- seq(from = 1.5, to = 2.5, by = 0.1)
+# tic()
+# for(dIndex in names(d)) {
+#   out <- data.frame(ari_d = numeric(0), ari_p = numeric(0), c_e = numeric(0))
+#   out1 <- data.frame(alpha = numeric(0), ari_d = numeric(0), ari_p = numeric(0), c_e = numeric(0))
+#   for(j in range){
+#     for(i in 1:iterations) {
+#       out <- rbind(out , ARIreport_s(d[[dIndex]], tDimention = 2, s = j))
+#     }
+#     out1 <- rbind(out1, data.frame(alpha = j,
+#                                    ari_d  = mean(out[,1]), sd_ari_d = sd(out[,1]),
+#                                    ari_p  = mean(out[,2]), sd_ari_p = sd(out[,2]),
+#                                    c_e    = mean(out[,3]), sd_c_e = sd(out[,3])
+#     )
+#     )
+#   }
+#   d[[dIndex]]$ARIvsAlpha <- out1
+#   print(dIndex)
+# }
+# toc()
+# 
+# save(file = 'SimData_ARIvsSD2_1jN.RData', list = c('d'))
+# 
+# 
+# beep(4)
+# 
+# iterations <- 200
+# range <- seq(from = 1, to = 2, by = 0.1)
+# tic()
+# for(dIndex in names(d)) {
+#   out <- data.frame(ari_d = numeric(0), ari_p = numeric(0), c_e = numeric(0))
+#   out1 <- data.frame(alpha = numeric(0),
+#                      ari_d = numeric(0), sd_ari_d = numeric(0),
+#                      ari_p = numeric(0), sd_ari_p = numeric(0),
+#                      c_e = numeric(0), sd_c_e = numeric(0))
+#   for(j in range){
+#     for(i in 1:iterations) {
+#       out <- rbind(out , ARIreport(d[[dIndex]], tDimention = 3, alpha = j))
+#     }
+#     out1 <- rbind(out1, data.frame(alpha = j,
+#                                    ari_d  = mean(out[,1]), sd_ari_d = sd(out[,1]),
+#                                    ari_p  = mean(out[,2]), sd_ari_p = sd(out[,2]),
+#                                    c_e    = mean(out[,3]), sd_c_e = sd(out[,3])
+#     )
+#     )
+#   }
+#   d[[dIndex]]$ARIvsAlpha <- out1
+#   print(dIndex)
+# }
+# toc()
+# 
+# save(file = 'SimData_ARIvsAlphaD3_1jP.RData', list = c('d'))
+# 
+# 
+# beep(4)
+# 
+# iterations <- 200
+# range <- seq(from = 1.5, to = 2.5, by = 0.1)
+# tic()
+# for(dIndex in names(d)) {
+#   out <- data.frame(ari_d = numeric(0), ari_p = numeric(0), c_e = numeric(0))
+#   out1 <- data.frame(alpha = numeric(0), ari_d = numeric(0), ari_p = numeric(0), c_e = numeric(0))
+#   for(j in range){
+#     for(i in 1:iterations) {
+#       out <- rbind(out , ARIreport_s(d[[dIndex]], tDimention = 3, s = j))
+#     }
+#     out1 <- rbind(out1, data.frame(alpha = j,
+#                                    ari_d  = mean(out[,1]), sd_ari_d = sd(out[,1]),
+#                                    ari_p  = mean(out[,2]), sd_ari_p = sd(out[,2]),
+#                                    c_e    = mean(out[,3]), sd_c_e = sd(out[,3])
+#     )
+#     )
+#   }
+#   d[[dIndex]]$ARIvsAlpha <- out1
+#   print(dIndex)
+# }
+# toc()
+# 
+# save(file = 'SimData_ARIvsSD3_1jQ.RData', list = c('d'))
+# 
+# 
+# beep(4)
+
+
+# Old ---------------------------------------------------------------------
+
 
 # report <- data.frame()
 # 
