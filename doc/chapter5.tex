@@ -80,7 +80,6 @@ Dataset & $ARI_p$ & $ARI_d$ & $C_e$\\
 \showrowcolors
 Thyroid & 0.5831656 & 0.4344288 & -15\\
 Iris & 0.6201352 & 0.5359746 & -8\\
-Diabetes & 0.3801662 & 0.3805076 & 0\\
 Swiss Banknotes & 0.8456292 & 0.4714675 & -37\\
 Seeds & 0.7732937 & 0.5299329 & -24\\
 \addlinespace
@@ -195,7 +194,6 @@ Dataset & $ARI_p$ & $ARI_d$ & $C_e$\\
 \showrowcolors
 Thyroid & 0.5831656 & 0.3658900 & -22\\
 Iris & 0.6201352 & 0.5441285 & -8\\
-Diabetes & 0.3801662 & 0.3460760 & -3\\
 Swiss Banknotes & 0.8456292 & 0.4330544 & -41\\
 Seeds & 0.7732937 & 0.4697687 & -30\\
 \addlinespace
@@ -299,7 +297,6 @@ Dataset & $ARI_p$ & $ARI_d$ & $C_e$\\
 \showrowcolors
 Thyroid & 0.5831656 & 0.4386178 & -14\\
 Iris & 0.6201352 & 0.5410759 & -8\\
-Diabetes & 0.3801662 & 0.3735668 & -1\\
 Swiss Banknotes & 0.8456292 & 0.4881694 & -36\\
 Seeds & 0.7732937 & 0.5289697 & -24\\
 \addlinespace
@@ -410,6 +407,136 @@ Crabs & 0.0481402 & 0.0463655 & 0\\
 
 \begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-26-7} \end{center}
 
+
+
+\section{
+جدول مقایسه نتایج پایان‌نامه با تحلیل مولفه‌های اصلی با معیارهای وابستگی مختلف
+}
+
+ستون‌های اضافه شده به جداول از 
+\cite{spisheh2018}
+آورده شده است.
+
+\begin{table}[H]
+\centering\rowcolors{2}{gray!6}{white}
+\caption{
+مقایسه کلی روش‌های نگاشت تصادفی و تحلیل مولفه‌های اصلی با معیار‌های وابستگی مختلف برای کاهش بعد به دو بعد
+}
+\bigskip
+\begin{latin}
+\begin{tabular}{lrrrrrrrrrr}
+\hiderowcolors
+\toprule
+	Dataset &
+	$\mathrm{RP}_{\alpha = 2}$ &
+	$\mathrm{RP}_{\alpha = 1}$ &
+	$\mathrm{RP}_{s = 2}$ &
+	Cov. 			&
+	$\rho_s$ &
+	$\rho'$ &
+	$\eta_p$ &
+	$\mathrm{SCV}_2$ &
+	$\mathrm{FSCV}_1$ &
+	$\mathrm{SCV}_1$ \\
+\midrule
+\showrowcolors
+Thyroid 		&
+	-18 &
+	-23 &
+	-18 &
+	-10 & 35 & 30 & -6 & 36 & 37 & 37 \\
+Iris 			&
+	-15 &
+	-11 &
+	-13 &
+	1 & 3 & 3 & 0 & 0 & 0 & 0 \\
+Diabetes 		&
+	-2 &
+	-5 &
+	-3 &
+	0 & 22 & 33 & 8 & 4 & 38 & 4 \\
+Banknotes 	&
+	-46 &
+	-44 &
+	-44 &
+	0 & 0 & -97 & -71 & -93 & 0 & -15 \\
+Seeds 		 	&
+	-33 &
+	-32 &
+	-33 &
+	-14 & 0 & -14 & 2 & 2 & 0 & 2 \\
+MPE &
+	-7 &
+	-7 &
+	-7 & -11 & -11 & -19 & -6 & -13 & -19 & -10 \\
+Crabs 			&
+	0 &
+	0 &
+	0 & 2 & 1 & -1 & 0 & -1 & 1 & -2 \\
+\bottomrule
+\end{tabular}
+\end{latin}
+\rowcolors{2}{white}{white}
+\end{table}
+
+\begin{table}[H]
+\centering\rowcolors{2}{gray!6}{white}
+\caption{
+مقایسه کلی روش‌های نگاشت تصادفی و تحلیل مولفه‌های اصلی با معیار‌های وابستگی مختلف برای کاهش بعد به سه بعد
+}
+\bigskip
+\begin{latin}
+\begin{tabular}{lrrrrrrrrrr}
+\hiderowcolors
+\toprule
+	Dataset &
+	$\mathrm{RP}_{\alpha = 2}$ &
+	$\mathrm{RP}_{\alpha = 1}$ &
+	$\mathrm{RP}_{s = 2}$ &
+	Cov. 			&
+	$\rho_s$ &
+	$\rho'$ &
+	$\eta_p$ &
+	$\mathrm{SCV}_2$ &
+	$\mathrm{FSCV}_1$ &
+	$\mathrm{SCV}_1$ \\
+\midrule
+\showrowcolors
+Thyroid 		&
+	-15 &
+	-22 &
+	-14 &
+	-12 & 3 & -6 & 5 & 4 & 2 & 4 \\
+Iris 			&
+	-8 &
+	-8 &
+	-8 &
+	0 & 2 & 1 & 0 & 3 & -1 & 3 \\
+Banknotes 	&
+	-37 &
+	-41 &
+	-36 &
+	0 & -5 & 0 & -88 & 0 & -24 & 0 \\
+Seeds 			&
+	-24 &
+	-30 &
+	-24 &
+	1 & 0 & -1 & 0 & -26 & -15 & -15 \\
+MPE &
+	-5 &
+	-7 &
+	-5 &
+	-9 & -8 & -12 & -4 & -8 & -7 & -8 \\
+Crabs 			&
+	0 &
+	0 &
+	0 &
+	-1 & 0 & 1 & 0 & 1 & -1 & 2 \\
+\bottomrule
+\end{tabular}
+\end{latin}
+\rowcolors{2}{white}{white}
+\end{table}
 
 
 
