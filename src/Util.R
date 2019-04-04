@@ -184,6 +184,21 @@ randomProjection <- function(d, targetNumDimention, alpha = 2) {
   
 }
 
+sRandomProjection <- function(d, targetNumDimention, s = 2) {
+  
+  r <- runif(ncol(d) * targetNumDimention, min = 0, max = 2*s)
+  r[r <= 1] = -1
+  r[r >= (2*s-1)] = 1
+  r[r != 1 & r != -1] <- 0
+  pm <- matrix(r,
+               nrow = ncol(d))
+  
+  d %*% pm
+  
+}
+
+
+
 # Util Functions ----------------------------------------------------------
 
 dataConfiguration <- function(cf, multiVariate = FALSE) {
@@ -275,3 +290,27 @@ ARIreport <- function(d, tDimention = 2, alpha = 2) {
   
   data.frame(ari_d = ari_d, ari_p = ari_p, c_e = c_e)
 }
+
+ARIreport_s <- function(d, tDimention = 2, s = 2) {
+  
+  nClass <- length(unique(d$class))
+  
+  cl <- kmeans(d$data, nClass, nstart = 20, iter.max = 100)
+  ari_d <- (adjustedRandIndex(d$class, cl$cluster))
+  
+  check <- TRUE
+  while(check){
+    check <- tryCatch({
+      d$pdata <- sRandomProjection(d$data, tDimention, s = s)
+      clp <- kmeans(d$pdata, nClass, nstart = 20, iter.max = 100)
+      FALSE
+      }, error = function(e) {print('not enough distinct points'); TRUE})
+  }
+  
+  ari_p <- (adjustedRandIndex(d$class, clp$cluster))
+  
+  c_e <- 100 * (ari_d - ari_p)
+  
+  data.frame(ari_d = ari_d, ari_p = ari_p, c_e = c_e)
+}
+

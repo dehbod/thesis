@@ -10,21 +10,21 @@ output:
 
 # For $\alpha$ = 2, p(reduced dimention) = 2
 
-## Tabel
+## Tabel_A2D2
 ```{r , include=FALSE}
 rm(list = ls(all.names = TRUE))
 library(kableExtra)
 load('SimData_A2D2_1ig.RData')
 ```
 
-```{r, echo=FALSE}
+```{r , echo=FALSE}
 tabel1 <- data.frame(Dataset = character(length(d)), ARI_d = numeric(length(d)), ARI_p = numeric(length(d)), C_e = numeric(length(d)), stringsAsFactors = FALSE)
 for(dIndex in 1:length(d)){
 td <- d[[dIndex]]
 tabel1[dIndex, ] <- data.frame(Dataset = td$name,
                                 ARI_d  = mean(td$ARIreport[,1]), 
                                 ARI_p  = mean(td$ARIreport[,2]), 
-                                C_e    = round(mean(td$ARIreport[,3])),
+                                C_e    = -round(mean(td$ARIreport[,3])),
                               stringsAsFactors = FALSE)
 }
 kable(tabel1, "latex", booktabs = T) %>%
@@ -34,7 +34,7 @@ kable_styling(latex_options = "striped")
 ## Histograms
 ```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
 for(dIndex in names(d)){
-hist(d[[dIndex]]$ARIreport[,2], breaks = 50, main = bquote(paste(.(d[[dIndex]]$name),' ',ARI[p])), xlab = 'ARI')
+hist(d[[dIndex]]$ARIreport[,2], breaks = 50, main = bquote(paste(.(d[[dIndex]]$name),' ',ARI[d])), xlab = 'ARI')
 }
 ```
 
@@ -54,7 +54,7 @@ td <- d[[dIndex]]
 tabel1[dIndex, ] <- data.frame(Dataset = td$name,
                                 ARI_d  = mean(td$ARIreport[,1]), 
                                 ARI_p  = mean(td$ARIreport[,2]), 
-                                C_e    = round(mean(td$ARIreport[,3])),
+                                C_e    = -round(mean(td$ARIreport[,3])),
                               stringsAsFactors = FALSE)
 }
 kable(tabel1, "latex", booktabs = T) %>%
@@ -64,7 +64,7 @@ kable_styling(latex_options = "striped")
 ## Histograms
 ```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
 for(dIndex in names(d)){
-hist(d[[dIndex]]$ARIreport[,2], breaks = 50, main = bquote(paste(.(d[[dIndex]]$name),' ',ARI[p])), xlab = 'ARI')
+hist(d[[dIndex]]$ARIreport[,2], breaks = 50, main = bquote(paste(.(d[[dIndex]]$name),' ',ARI[d])), xlab = 'ARI')
 }
 ```
 
@@ -84,7 +84,7 @@ td <- d[[dIndex]]
 tabel1[dIndex, ] <- data.frame(Dataset = td$name,
                                 ARI_d  = mean(td$ARIreport[,1]), 
                                 ARI_p  = mean(td$ARIreport[,2]), 
-                                C_e    = round(mean(td$ARIreport[,3])),
+                                C_e    = -round(mean(td$ARIreport[,3])),
                               stringsAsFactors = FALSE)
 }
 kable(tabel1, "latex", booktabs = T) %>%
@@ -94,7 +94,7 @@ kable_styling(latex_options = "striped")
 ## Histograms
 ```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
 for(dIndex in names(d)){
-hist(d[[dIndex]]$ARIreport[,2], breaks = 50, main = bquote(paste(.(d[[dIndex]]$name),' ',ARI[p])), xlab = 'ARI')
+hist(d[[dIndex]]$ARIreport[,2], breaks = 50, main = bquote(paste(.(d[[dIndex]]$name),' ',ARI[d])), xlab = 'ARI')
 }
 ```
 
@@ -114,7 +114,7 @@ td <- d[[dIndex]]
 tabel1[dIndex, ] <- data.frame(Dataset = td$name,
                                 ARI_d  = mean(td$ARIreport[,1]), 
                                 ARI_p  = mean(td$ARIreport[,2]), 
-                                C_e    = round(mean(td$ARIreport[,3])),
+                                C_e    = -round(mean(td$ARIreport[,3])),
                               stringsAsFactors = FALSE)
 }
 kable(tabel1, "latex", booktabs = T) %>%
@@ -124,6 +124,139 @@ kable_styling(latex_options = "striped")
 ## Histograms
 ```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
 for(dIndex in names(d)){
-hist(d[[dIndex]]$ARIreport[,2], breaks = 50, main = bquote(paste(.(d[[dIndex]]$name),' ',ARI[p])), xlab = 'ARI')
+hist(d[[dIndex]]$ARIreport[,2], breaks = 50, main = bquote(paste(.(d[[dIndex]]$name),' ',ARI[d])), xlab = 'ARI')
+}
+```
+
+
+# For $s$ = 2, p(reduced dimention) = 2
+
+## Tabel
+```{r , include=FALSE}
+rm(list = ls(all.names = TRUE))
+library(kableExtra)
+load('SimData_S2D2_1jK.RData')
+```
+
+```{r, echo=FALSE}
+tabel1 <- data.frame(Dataset = character(length(d)), ARI_d = numeric(length(d)), ARI_p = numeric(length(d)), C_e = numeric(length(d)), stringsAsFactors = FALSE)
+for(dIndex in 1:length(d)){
+td <- d[[dIndex]]
+tabel1[dIndex, ] <- data.frame(Dataset = td$name,
+                                ARI_d  = mean(td$ARIreport[,1]), 
+                                ARI_p  = mean(td$ARIreport[,2]), 
+                                C_e    = -round(mean(td$ARIreport[,3])),
+                              stringsAsFactors = FALSE)
+}
+kable(tabel1, "latex", booktabs = T) %>%
+kable_styling(latex_options = "striped")
+```
+
+## Histograms
+```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
+for(dIndex in names(d)){
+hist(d[[dIndex]]$ARIreport[,2], breaks = 50, main = bquote(paste(.(d[[dIndex]]$name),' ',ARI[d])), xlab = 'ARI')
+}
+```
+
+# For $s$ = 2, p(reduced dimention) = 2
+
+## Tabel
+```{r , include=FALSE}
+rm(list = ls(all.names = TRUE))
+library(kableExtra)
+load('SimData_S2D3_1jR.RData')
+```
+
+```{r, echo=FALSE}
+tabel1 <- data.frame(Dataset = character(length(d)), ARI_d = numeric(length(d)), ARI_p = numeric(length(d)), C_e = numeric(length(d)), stringsAsFactors = FALSE)
+for(dIndex in 1:length(d)){
+td <- d[[dIndex]]
+tabel1[dIndex, ] <- data.frame(Dataset = td$name,
+                                ARI_d  = mean(td$ARIreport[,1]), 
+                                ARI_p  = mean(td$ARIreport[,2]), 
+                                C_e    = -round(mean(td$ARIreport[,3])),
+                              stringsAsFactors = FALSE)
+}
+kable(tabel1, "latex", booktabs = T) %>%
+kable_styling(latex_options = "striped")
+```
+
+## Histograms
+```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
+for(dIndex in names(d)){
+hist(d[[dIndex]]$ARIreport[,2], breaks = 50, main = bquote(paste(.(d[[dIndex]]$name),' ',ARI[d])), xlab = 'ARI')
+}
+```
+
+# For ARI vs alpha, p(reduced dimention) = 2
+
+## Data
+```{r , include=FALSE}
+rm(list = ls(all.names = TRUE))
+library(kableExtra)
+load('SimData_ARIvsAlphaD2_1jM.RData')
+```
+
+## Plot
+```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
+for(dIndex in names(d)){
+plot(d[[dIndex]]$ARIvsAlpha[,1], -d[[dIndex]]$ARIvsAlpha[,6],
+     type = 'o',
+     main = bquote(.(d[[dIndex]]$name)~C[e]~' vs.'~alpha), xlab = bquote(alpha), ylab=bquote(C[e]))
+}
+```
+
+# For ARI vs alpha, p(reduced dimention) = 3
+
+## Data
+```{r , include=FALSE}
+rm(list = ls(all.names = TRUE))
+library(kableExtra)
+load('SimData_ARIvsAlphaD3_1jP.RData')
+```
+
+## Plot
+```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
+for(dIndex in names(d)){
+plot(d[[dIndex]]$ARIvsAlpha[,1], -d[[dIndex]]$ARIvsAlpha[,6],
+     type = 'o',
+     main = bquote(.(d[[dIndex]]$name)~C[e]~' vs.'~alpha), xlab = bquote(alpha), ylab=bquote(C[e]))
+}
+```
+
+# For ARI vs s, p(reduced dimention) = 2
+
+## Data
+```{r , include=FALSE}
+rm(list = ls(all.names = TRUE))
+library(kableExtra)
+load('SimData_ARIvsSD2_1jN.RData')
+```
+
+## Plot
+```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
+for(dIndex in names(d)){
+plot(d[[dIndex]]$ARIvsAlpha[,1], -d[[dIndex]]$ARIvsAlpha[,6],
+     type = 'o',
+     main = bquote(.(d[[dIndex]]$name)~C[e]~' vs.'~s), xlab = bquote(s), ylab=bquote(C[e]))
+}
+```
+
+# For ARI vs s, p(reduced dimention) = 3
+
+## Data
+```{r , include=FALSE}
+rm(list = ls(all.names = TRUE))
+library(kableExtra)
+load('SimData_ARIvsSD3_1jQ.RData')
+```
+
+## Plot
+```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
+for(dIndex in names(d)){
+plot(d[[dIndex]]$ARIvsAlpha[,1], -d[[dIndex]]$ARIvsAlpha[,6],
+     type = 'o',
+     main = bquote(.(d[[dIndex]]$name)~C[e]~' vs.'~s), xlab = bquote(s), ylab=bquote(C[e]))
 }
 ```
