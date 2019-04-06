@@ -1,0 +1,260 @@
+---
+title: "Thesis Reports"
+author: "S.Dehbod"
+date: "April 5, 2019"
+output:
+  pdf_document: 
+    keep_tex: yes
+  html_notebook: default
+---
+
+# For $\alpha$ = 2, d(reduced dimention) = 2,3, 5, 10, 20, 30, 50
+
+```{r , include=FALSE}
+rm(list = ls(all.names = TRUE))
+library(kableExtra)
+library(stringr)
+files <- dir(pattern = 'A2D.*\\_Sim\\_')
+tabel2 <- data.frame(
+    Dataset = character(0),
+    d = numeric(0),
+    ARI_p = numeric(0),
+    ARI_d = numeric(0),
+    C_e = numeric(0),
+    stringsAsFactors = FALSE)
+
+
+for(file in files) {
+  load(file)
+  targetDimention <- as.numeric(str_extract(str_extract(file, 'D[0-9]+\\_Sim\\_'), '[0-9]+'))
+  tabel1 <- data.frame(
+    Dataset = character(length(d)),
+    d = numeric(length(d)),
+    ARI_p = numeric(length(d)),
+    ARI_d = numeric(length(d)),
+    C_e = numeric(length(d)),
+    stringsAsFactors = FALSE)
+  
+  for(dIndex in 1:length(d)){
+  td <- d[[dIndex]]
+  tabel1[dIndex, ] <- data.frame(Dataset = td$name,
+                                 d = targetDimention,
+                                 ARI_p  = mean(td$ARIreport[,1]), 
+                                 ARI_d  = mean(td$ARIreport[,2]), 
+                                 C_e    = -round(mean(td$ARIreport[,3])),
+                                 stringsAsFactors = FALSE)
+  }
+  
+  tabel2 <- rbind(tabel2, tabel1)
+  
+  
+}
+```
+
+## Table Sim200
+```{r , echo=FALSE}
+tabel3 <- tabel2[tabel2$Dataset == 'Sim200', ]
+tabel3 <- tabel3[ , 2:ncol(tabel3)]
+tabel3 <- tabel3[order(tabel3$d), ]
+row.names(tabel3) <- NULL
+kable(tabel3, "latex", booktabs = T) %>%
+kable_styling(latex_options = "striped")
+
+```
+
+## Plot Sim200
+```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
+plot(tabel3$d,tabel3$C_e, type = 'o',
+     main = bquote('Simulated 200 dimention'~C[e]~' vs.'~'Reduced dimention'),
+     xlab = bquote('Reduced dimention'),
+     ylab = bquote(C[e]))
+```
+
+## Table Sim1000
+```{r , echo=FALSE}
+tabel3 <- tabel2[tabel2$Dataset == 'Sim1000', ]
+tabel3 <- tabel3[ , 2:ncol(tabel3)]
+tabel3 <- tabel3[order(tabel3$d), ]
+row.names(tabel3) <- NULL
+kable(tabel3, "latex", booktabs = T) %>%
+kable_styling(latex_options = "striped")
+
+```
+
+## Plot Sim1000
+```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
+library(kableExtra)
+plot(tabel3$d,tabel3$C_e, type = 'o',
+     main = bquote('Simulated 1000 dimention'~C[e]~' vs.'~'Reduced dimention'),
+     xlab = bquote('Reduced dimention'),
+     ylab = bquote(C[e]))
+```
+
+
+
+# For $\alpha$ = 1, d(reduced dimention) = 2,3, 5, 10, 20, 30, 50
+
+```{r , include=FALSE}
+rm(list = ls(all.names = TRUE))
+library(kableExtra)
+library(stringr)
+files <- dir(pattern = 'A1D.*\\_Sim\\_')
+tabel2 <- data.frame(
+    Dataset = character(0),
+    d = numeric(0),
+    ARI_p = numeric(0),
+    ARI_d = numeric(0),
+    C_e = numeric(0),
+    stringsAsFactors = FALSE)
+
+
+for(file in files) {
+  load(file)
+  targetDimention <- as.numeric(str_extract(str_extract(file, 'D[0-9]+\\_Sim\\_'), '[0-9]+'))
+  tabel1 <- data.frame(
+    Dataset = character(length(d)),
+    d = numeric(length(d)),
+    ARI_p = numeric(length(d)),
+    ARI_d = numeric(length(d)),
+    C_e = numeric(length(d)),
+    stringsAsFactors = FALSE)
+  
+  for(dIndex in 1:length(d)){
+  td <- d[[dIndex]]
+  tabel1[dIndex, ] <- data.frame(Dataset = td$name,
+                                 d = targetDimention,
+                                 ARI_p  = mean(td$ARIreport[,1]), 
+                                 ARI_d  = mean(td$ARIreport[,2]), 
+                                 C_e    = -round(mean(td$ARIreport[,3])),
+                                 stringsAsFactors = FALSE)
+  }
+  
+  tabel2 <- rbind(tabel2, tabel1)
+  
+  
+}
+```
+
+## Table Sim200
+```{r , echo=FALSE}
+tabel3 <- tabel2[tabel2$Dataset == 'Sim200', ]
+tabel3 <- tabel3[ , 2:ncol(tabel3)]
+tabel3 <- tabel3[order(tabel3$d), ]
+row.names(tabel3) <- NULL
+kable(tabel3, "latex", booktabs = T) %>%
+kable_styling(latex_options = "striped")
+
+```
+
+## Plot Sim200
+```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
+plot(tabel3$d,tabel3$C_e, type = 'o',
+     main = bquote('Simulated 200 dimention'~C[e]~' vs.'~'Reduced dimention'),
+     xlab = bquote('Reduced dimention'),
+     ylab = bquote(C[e]))
+```
+
+## Table Sim1000
+```{r , echo=FALSE}
+tabel3 <- tabel2[tabel2$Dataset == 'Sim1000', ]
+tabel3 <- tabel3[ , 2:ncol(tabel3)]
+tabel3 <- tabel3[order(tabel3$d), ]
+row.names(tabel3) <- NULL
+kable(tabel3, "latex", booktabs = T) %>%
+kable_styling(latex_options = "striped")
+
+```
+
+## Plot Sim1000
+```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
+library(kableExtra)
+plot(tabel3$d,tabel3$C_e, type = 'o',
+     main = bquote('Simulated 1000 dimention'~C[e]~' vs.'~'Reduced dimention'),
+     xlab = bquote('Reduced dimention'),
+     ylab = bquote(C[e]))
+```
+
+
+# For s = 2, d(reduced dimention) = 2,3, 5, 10, 20, 30, 50
+
+```{r , include=FALSE}
+rm(list = ls(all.names = TRUE))
+library(kableExtra)
+library(stringr)
+files <- dir(pattern = 'S2D.*\\_Sim\\_')
+tabel2 <- data.frame(
+    Dataset = character(0),
+    d = numeric(0),
+    ARI_p = numeric(0),
+    ARI_d = numeric(0),
+    C_e = numeric(0),
+    stringsAsFactors = FALSE)
+
+
+for(file in files) {
+  load(file)
+  targetDimention <- as.numeric(str_extract(str_extract(file, 'D[0-9]+\\_Sim\\_'), '[0-9]+'))
+  tabel1 <- data.frame(
+    Dataset = character(length(d)),
+    d = numeric(length(d)),
+    ARI_p = numeric(length(d)),
+    ARI_d = numeric(length(d)),
+    C_e = numeric(length(d)),
+    stringsAsFactors = FALSE)
+  
+  for(dIndex in 1:length(d)){
+  td <- d[[dIndex]]
+  tabel1[dIndex, ] <- data.frame(Dataset = td$name,
+                                 d = targetDimention,
+                                 ARI_p  = mean(td$ARIreport[,1]), 
+                                 ARI_d  = mean(td$ARIreport[,2]), 
+                                 C_e    = -round(mean(td$ARIreport[,3])),
+                                 stringsAsFactors = FALSE)
+  }
+  
+  tabel2 <- rbind(tabel2, tabel1)
+  
+  
+}
+```
+
+## Table Sim200
+```{r , echo=FALSE}
+tabel3 <- tabel2[tabel2$Dataset == 'Sim200', ]
+tabel3 <- tabel3[ , 2:ncol(tabel3)]
+tabel3 <- tabel3[order(tabel3$d), ]
+row.names(tabel3) <- NULL
+kable(tabel3, "latex", booktabs = T) %>%
+kable_styling(latex_options = "striped")
+
+```
+
+## Plot Sim200
+```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
+plot(tabel3$d,tabel3$C_e, type = 'o',
+     main = bquote('Simulated 200 dimention'~C[e]~' vs.'~'Reduced dimention'),
+     xlab = bquote('Reduced dimention'),
+     ylab = bquote(C[e]))
+```
+
+## Table Sim1000
+```{r , echo=FALSE}
+tabel3 <- tabel2[tabel2$Dataset == 'Sim1000', ]
+tabel3 <- tabel3[ , 2:ncol(tabel3)]
+tabel3 <- tabel3[order(tabel3$d), ]
+row.names(tabel3) <- NULL
+kable(tabel3, "latex", booktabs = T) %>%
+kable_styling(latex_options = "striped")
+
+```
+
+## Plot Sim1000
+```{r, out.width='1\\linewidth', fig.align='center', echo=FALSE}
+library(kableExtra)
+plot(tabel3$d,tabel3$C_e, type = 'o',
+     main = bquote('Simulated 1000 dimention'~C[e]~' vs.'~'Reduced dimention'),
+     xlab = bquote('Reduced dimention'),
+     ylab = bquote(C[e]))
+```
+
+

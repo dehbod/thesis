@@ -1,10 +1,89 @@
 \chapter{جمع‌بندي و نتيجه‌گيري و پیشنهادات}
 
+هدف این فصل سنجش عملکر کاهش بعد با استفاده از تصویر تصادفی است. بدین منظور برای هر یک از مجموعه داده‌های معرفی شده در فصل چهارم روش‌های مختلف کاهش بعد بوسیله تصویر تصادفی با پارامتر‌های مختلف مقایسه شده‌اند. هر سطر 
+\autoref{tbl:1mx}
+یک حالت مورد بررسی است که بر روی تمام مجموعه داده‌ی معرفی شده در فصل چهارم اعمال می‌شود. 
+
+\begin{table}[H]
+\centering\rowcolors{2}{gray!6}{white}
+\caption{
+شرایط کاهش بعد در شش بخش اول
+}
+\bigskip
+\begin{tabular}{ccccc}
+\hiderowcolors
+\toprule
+ & روش & پارامتر & مقدار پارامتر & بعد کاهش یافته\\
+\midrule
+\showrowcolors
+\ref{sec:A2D2} &
+پایدار & 
+$\alpha$ &
+ 2(نرمال) & 2\\
+\ref{sec:A2D3} &
+پایدار & 
+$\alpha$ &
+ 2(نرمال) & 3\\
+\ref{sec:A1D2} &
+پایدار & 
+$\alpha$ &
+ 1(کوشی) & 2\\
+\ref{sec:A1D3} &
+پایدار & 
+$\alpha$ &
+ 1(کوشی) & 3\\
+\ref{sec:S2D2} &
+گسسته & 
+$s$ &
+ 2 & 2\\
+\ref{sec:S2D3} &
+گسسته & 
+$s$ &
+ 2 & 3\\
+\bottomrule
+\end{tabular}
+\rowcolors{2}{white}{white}
+\label{tbl:1mx}
+\end{table}
+
+
+
+
+در شش بخش اول به بررسی عملکرد و پایداری کاهش بعد برای هر یک از سطرهای 
+\autoref{tbl:1mx}
+پرداختیم. عملکرد کاهش بعد با سنجه‌های 
+$\mathrm{ARI}_d$
+و 
+$C_e$
+که در (
+\autoref{sec:ari_ce}
+)
+معرفی شده‌اند. در جدول ابتدای هر بخش برای مجموعه داده‌های مختلف سنجیده شده. در ادامه نمودار فراوانی 
+$\mathrm{ARI}_d$
+برای هر مجموعه داده بیان شده است که به طور شهودی انتظار ما را از عملکرد کاهش بعد با روش تصویر تصادفی بیان می‌کند. اگر نمودار فراوانی دارای قله‌های مشخصی باشد انتظار می‌رود که عملکرد کاهش بعد با روش تصویر تصادفی معنی‌دار باشد ولی اگر 
+$\mathrm{ARI}_d$
+دارای مقادیر انتظاری محتمل‌تری نباشد نمی‌توان انتظار داشت که با یک یا تعداد کمی کاهش بعد با ماتریس‌های تصادفی لزوما به عملکرد مشابهی مانند میانگین آماری بیان شده در جداول ابتدای هر بخش، دست یافت. مقادیر مربوط به جداول میانگین مربوط به 1000 ماتریس تصادفی مختلف است.
+
+در چهار بخش بعدی رفتار عملکرد کاهش بعد (%
+$C_e$%
+) نسبت به پارامترهای مدل سنجیده شده است. برای حالت پایدار در دو حالت کاهش بعد به دو و سه بعد برای 
+$\alpha$
+از 1 تا 2 در قدم‌های 0.1 مقدار
+$C_e$
+با نمونه‌گیری 200 تایی بیان شده است. و برای کاهش بعد گسسته به دو و سه بعد برای 
+$s$
+از 1.5 تا 2.5 در قدم‌های 0.1 مقدار 
+$C_e$
+با نمونه‌گیری 200 تایی بیان شده است.
+
+
+
 \section{
 بررسی کاهش بعد نرمال
 $(\alpha=2)$
 به دو بعد
 }
+\label{sec:A2D2}
 
 \subsection{جداول مقایسه عملکرد خوشه‌بندی}
 
@@ -39,19 +118,187 @@ Mice Protein Expression & 0.1316117 & 0.0657659 & -7\\
 \subsection{نمودار فراوانی عملکرد خوشه‌بندی}
 
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-3-1} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-3-1} 
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+نرمال (%
+$\alpha=2$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+تیروئید
+\ref{sec:Thyroid}
+. این نمودار فراوانی،
+قله‌های
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+وسیعی را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-3-2} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-3-2}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+نرمال (%
+$\alpha=2$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+آیریس
+\ref{sec:Iris}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و دسته‌ای از مقادیر آن طیف 
+محدودی
+را پوشش می‌دهند که امکان این را فراهم می‌آورد که با تست تعداد محدودی ماتریس تصادفی کاهش بعد قابل قبولی را انتظار داشته باشیم.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-3-3} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-3-3}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+نرمال (%
+$\alpha=2$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+دیابت
+\ref{sec:Diabetes}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-3-4} \end{center}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-3-5} \end{center}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-3-6} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-3-4}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+نرمال (%
+$\alpha=2$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+اسکناس
+\ref{sec:Swiss}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+نمی‌دهد
+و مقادیر آن طیف 
+وسیعی را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-3-7} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-3-5}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+نرمال (%
+$\alpha=2$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+بذر
+\ref{sec:Seeds}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+را پوشش می‌دهند.
+}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-3-6}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+نرمال (%
+$\alpha=2$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+خرچنگ
+\ref{sec:Crabs}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+را پوشش می‌دهند.
+}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-3-7}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+نرمال (%
+$\alpha=2$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+پروتئین
+\ref{sec:MPE}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+را پوشش می‌دهند.
+}
+\end{figure}
 
 
 
@@ -61,6 +308,7 @@ Mice Protein Expression & 0.1316117 & 0.0657659 & -7\\
 
 
 \section{نتایج برای کاهش بعد نرمال به سه بعد}
+\label{sec:A2D3}
 
 \subsection{جداول مقایسه عملکرد خوشه‌بندی}
 
@@ -95,19 +343,194 @@ Crabs & 0.0481402 & 0.0485252 & 0\\
 \subsection{نمودار فراوانی عملکرد خوشه‌بندی}
 
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-6-1} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-6-1}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+نرمال (%
+$\alpha=2$%
+)
+به 
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+تیروئید
+\ref{sec:Thyroid}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-6-2} \end{center}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-6-3} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-6-2}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+نرمال (%
+$\alpha=2$%
+)
+به
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+آیریس
+\ref{sec:Iris}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-6-4} \end{center}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-6-5} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-6-3}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+نرمال (%
+$\alpha=2$%
+)
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+دیابت
+\ref{sec:Diabetes}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-6-6} \end{center}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-6-7} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-6-4}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+نرمال (%
+$\alpha=2$%
+)
+به
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+اسکناس
+\ref{sec:Swiss}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+نمی‌دهد
+و مقادیر آن طیف 
+وسیعی را پوشش می‌دهند.
+}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-6-5}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+نرمال (%
+$\alpha=2$%
+)
+به سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+بذر
+\ref{sec:Seeds}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+را پوشش می‌دهند.
+}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-6-6}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+نرمال (%
+$\alpha=2$%
+)
+به سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+پروتئین
+\ref{sec:MPE}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-6-7}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+نرمال (%
+$\alpha=2$%
+)
+به سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+خرچنگ
+\ref{sec:Crabs}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
 
 
 
@@ -121,6 +544,7 @@ Crabs & 0.0481402 & 0.0485252 & 0\\
 $(\alpha = 1)$
 به دو بعد
 }
+\label{sec:A1D2}
 
 \subsection{جداول مقایسه عملکرد خوشه‌بندی}
 
@@ -156,19 +580,191 @@ Crabs & 0.0481402 & 0.0469365 & 0\\
 \subsection{نمودار فراوانی عملکرد خوشه‌بندی}
 
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-9-1} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-9-1}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+کوشی (%
+$\alpha=1$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+تیروئید
+\ref{sec:Thyroid}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-9-2} \end{center}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-9-3} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-9-2}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+کوشی (%
+$\alpha=1$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+آیریس
+\ref{sec:Iris}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+وسیعی را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-9-4} \end{center}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-9-5} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-9-3}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+کوشی (%
+$\alpha=1$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+دیابت
+\ref{sec:Diabetes}
+این نمودار فراوانی،
+قله‌های
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-9-6} \end{center}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-9-7} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-9-4}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+کوشی (%
+$\alpha=1$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+اسکناس
+\ref{sec:Swiss}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+نمی‌دهد
+و مقادیر آن طیف 
+وسیعی را پوشش می‌دهند.
+}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-9-5}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+کوشی (%
+$\alpha=1$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+بذر
+\ref{sec:Seeds}
+این نمودار فراوانی،
+قله‌های
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+وسیعی را پوشش می‌دهند.
+}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-9-6}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+کوشی (%
+$\alpha=1$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+پروتئین
+\ref{sec:MPE}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-9-7}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+کوشی (%
+$\alpha=1$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+خرچنگ
+\ref{sec:Crabs}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
+
 
 
 
@@ -176,6 +772,7 @@ Crabs & 0.0481402 & 0.0469365 & 0\\
 
 
 \section{نتایج برای کاهش بعد کوشی به سه بعد}
+\label{sec:A1D3}
 
 \subsection{جداول مقایسه عملکرد خوشه‌بندی}
 
@@ -208,31 +805,204 @@ Crabs & 0.0481402 & 0.0452313 & 0\\
 
 \subsection{نمودار فراوانی عملکرد خوشه‌بندی}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-12-1} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-12-1}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+کوشی (%
+$\alpha=1$%
+)
+به
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+دیابت
+\ref{sec:Diabetes}
+این نمودار فراوانی،
+قله‌های
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+وسیعی را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-12-2} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-12-2}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+کوشی (%
+$\alpha=1$%
+)
+به
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+آیریس
+\ref{sec:Iris}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+نمی‌دهد
+و مقادیر آن طیف 
+وسیعی را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-12-3} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-12-3}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+کوشی (%
+$\alpha=1$%
+)
+به 
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+دیابت
+\ref{sec:Diabetes}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-12-4} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-12-4}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+کوشی (%
+$\alpha=1$%
+)
+به 
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+اسکناس
+\ref{sec:Swiss}
+این نمودار فراوانی،
+قله‌های
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+وسیعی را پوشش می‌دهند. در این نمودار موضوع جالب برخی از تصویر‌های تصادفی هستند که عملکردی نزدیک به عملکرد حالت کاهش نیافته دارند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-12-5} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-12-5}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+کوشی (%
+$\alpha=1$%
+)
+به 
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+بذر
+\ref{sec:Seeds}
+این نمودار فراوانی،
+قله‌های
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-12-6} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-12-6}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+کوشی (%
+$\alpha=1$%
+)
+به
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+پروتئین
+\ref{sec:MPE}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-12-7} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-12-7}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+کوشی (%
+$\alpha=1$%
+)
+به
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+خرچنگ
+\ref{sec:Crabs}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
 
 
 \section{
 نتایج برای کاهش بعد گسسته $s=2$ به دو بعد
 }
+\label{sec:S2D2}
 
 \subsection{جداول مقایسه عملکرد خوشه‌بندی}
 
 \begin{table}[H]
 \caption{
 عملکرد تصویر تصادفی گسسته با
-$s=1$
+$s=2$
 برای کاهش بعد به دو بعد
 }
 \centering\rowcolors{2}{gray!6}{white}
@@ -260,24 +1030,190 @@ Crabs & 0.0481402 & 0.0467305 & 0\\
 \subsection{نمودار فراوانی عملکرد خوشه‌بندی}
 
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-15-1} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-15-1}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+گسسته (%
+$s=2$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+تیروئید
+\ref{sec:Thyroid}
+این نمودار فراوانی،
+قله‌های
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+وسیعی را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-15-2} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-15-2}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+گسسته (%
+$s=2$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+آیریس
+\ref{sec:Iris}
+این نمودار فراوانی،
+قله‌های
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+وسیعی را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-15-3} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-15-3}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+گسسته (%
+$s=2$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+دیابت
+\ref{sec:Diabetes}
+این نمودار فراوانی،
+قله‌های
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-15-4} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-15-4}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+گسسته (%
+$s=2$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+اسکناس
+\ref{sec:Swiss}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+نمی‌دهد
+و مقادیر آن طیف 
+وسیعی را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-15-5} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-15-5}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+گسسته (%
+$s=2$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+بذر
+\ref{sec:Seeds}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-15-6} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-15-6}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+گسسته (%
+$s=2$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+پروتئین
+\ref{sec:MPE}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-15-7} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-15-7}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+گسسته (%
+$s=2$%
+)
+به دو (%
+$d=2$%
+)
+بعد برای مجموعه داده‌های
+خرچنگ
+\ref{sec:Crabs}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
 
 
 \section{
 نتایج برای کاهش بعد گسسته $s=2$ به سه بعد
 }
+\label{sec:S2D3}
 
 \subsection{جداول مقایسه عملکرد خوشه‌بندی}
 
@@ -312,19 +1248,192 @@ Crabs & 0.0481402 & 0.0463655 & 0\\
 \subsection{نمودار فراوانی عملکرد خوشه‌بندی}
 
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-18-1} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-18-1}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+گسسته (%
+$s=2$%
+)
+به
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+تیروئید
+\ref{sec:Thyroid}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+نمی‌دهد
+و مقادیر آن طیف 
+وسیعی را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-18-2} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-18-2}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+گسسته (%
+$s=2$%
+)
+به
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+آیریس
+\ref{sec:Iris}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-18-3} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-18-3}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+گسسته (%
+$s=2$%
+)
+به
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+دیابت
+\ref{sec:Diabetes}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-18-4} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-18-4}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+گسسته (%
+$s=2$%
+)
+به
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+اسکناس
+\ref{sec:Swiss}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+نمی‌دهد
+و مقادیر آن طیف 
+وسیعی را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-18-5} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-18-5}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+گسسته (%
+$s=2$%
+)
+به 
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+بذر
+\ref{sec:Seeds}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-18-6} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-18-6}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+گسسته (%
+$s=2$%
+)
+به
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+پروتئین
+\ref{sec:MPE}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-18-7} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-18-7}
+\caption{
+نمودار فراوانی عملکرد خوشه‌بندی 
+$\mathrm{ARI}_d$
+پس از کاهش بعد با استفاده از تصویر تصادفی
+گسسته (%
+$s=2$%
+)
+به
+سه (%
+$d=3$%
+)
+بعد برای مجموعه داده‌های
+خرچنگ
+\ref{sec:Crabs}
+این نمودار فراوانی،
+قله
+مشخصی را نشان 
+می‌دهد
+و مقادیر آن طیف 
+محدودی
+ را پوشش می‌دهند.
+}
+\end{figure}
 
 
 
@@ -333,19 +1442,149 @@ Crabs & 0.0481402 & 0.0463655 & 0\\
 }
 
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-20-1} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-20-1}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$\alpha$
+برای کاهش بعد به 
+دو
+بعد بر روی مجموعه داده‌‌‌ی 
+تیروئید
+\ref{sec:Thyroid}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+نرمال
+بهتر از کاهش بعد 
+کوشی 
+عمل می‌کند
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-20-2} \end{center}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-20-3} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-20-2}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$\alpha$
+برای کاهش بعد به 
+دو
+ بعد بر روی مجموعه داده‌‌‌ی 
+آیریس
+\ref{sec:Iris}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+کوشی 
+بهتر از کاهش بعد 
+نرمال
+عمل می‌کند
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-20-4} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-20-3}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$\alpha$
+برای کاهش بعد به 
+دو
+ بعد بر روی مجموعه داده‌‌‌ی 
+دیابت
+\ref{sec:Diabetes}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+نرمال
+بهتر از کاهش بعد 
+کوشی 
+عمل می‌کند
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-20-5} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-20-4}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$\alpha$
+برای کاهش بعد به 
+دو
+بعد بر روی مجموعه داده‌‌‌ی 
+اسکناس
+\ref{sec:Swiss}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+نزدیک به 
+کوشی 
+بهتر از کاهش بعد 
+کوشی و نرمال
+عمل می‌کند
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-20-6} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-20-5}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$\alpha$
+برای کاهش بعد به 
+دو
+ بعد بر روی مجموعه داده‌‌‌ی 
+بذر
+\ref{sec:Seeds}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+کوشی خوب
+عمل نمی‌کند
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-20-7} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-20-6}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$\alpha$
+برای کاهش بعد به 
+دو
+ بعد بر روی مجموعه داده‌‌‌ی 
+پروتئین
+\ref{sec:MPE}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+نرمال
+بهتر از کاهش بعد 
+کوشی 
+عمل می‌کند
+}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-20-7}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$\alpha$
+برای کاهش بعد به 
+دو
+بعد بر روی مجموعه داده‌‌‌ی 
+خرچنگ
+\ref{sec:Crabs}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+تفاوت خاصی میان عملکرد کاهش بعد نرمال تا کوشی وجود ندارد
+}
+\end{figure}
 
 
 
@@ -354,38 +1593,271 @@ Crabs & 0.0481402 & 0.0463655 & 0\\
 }
 
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-22-1} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-22-1}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$\alpha$
+برای کاهش بعد به 
+سه بعد بر روی مجموعه داده‌‌‌ی 
+تیروئید
+\ref{sec:Thyroid}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+نرمال
+اندکی بهتر از کاهش بعد 
+کوشی 
+عمل می‌کند
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-22-2} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-22-2}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$\alpha$
+برای کاهش بعد به 
+سه بعد بر روی مجموعه داده‌‌‌ی 
+آیریس
+\ref{sec:Iris}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+کوشی 
+خوب عمل نمی‌کند
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-22-3} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-22-3}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$\alpha$
+برای کاهش بعد به 
+سه بعد بر روی مجموعه داده‌‌‌ی 
+دیابت
+\ref{sec:Diabetes}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+نرمال
+بهتر از کاهش بعد 
+کوشی 
+عمل می‌کند
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-22-4} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-22-4}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$\alpha$
+برای کاهش بعد به 
+سه بعد بر روی مجموعه داده‌‌‌ی 
+اسکناس
+\ref{sec:Swiss}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+کوشی 
+بهتر از کاهش بعد 
+نرمال
+عمل می‌کند
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-22-5} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-22-5}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$\alpha$
+برای کاهش بعد به 
+سه بعد بر روی مجموعه داده‌‌‌ی 
+بذر
+\ref{sec:Seeds}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+نرمال
+بهتر از کاهش بعد 
+کوشی 
+عمل می‌کند
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-22-6} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-22-6}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$\alpha$
+برای کاهش بعد به 
+سه بعد بر روی مجموعه داده‌‌‌ی 
+پروتئین
+\ref{sec:MPE}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+نرمال
+بهتر از کاهش بعد 
+کوشی 
+عمل می‌کند
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-22-7} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-22-7}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$\alpha$
+برای کاهش بعد به 
+سه بعد بر روی مجموعه داده‌‌‌ی 
+خرچنگ
+\ref{sec:Crabs}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+تفاوت خاصی میان عملکرد کاهش بعد نرمال تا کوشی وجود ندارد
+}
+\end{figure}
 
 \section{
 بررسی تابعیت عملکرد کاهش بعد $C_e$ به ازای تغییر $s$ برای کاهش بعد گسسته به دو بعد
 }
 
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-24-1} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-24-1}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$s$
+برای کاهش بعد به 
+دو
+بعد بر روی مجموعه داده‌‌‌ی 
+تیروئید
+\ref{sec:Thyroid}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+با تصویر تنک‌تر عملکرد کاهش بعد بدتر می‌شود
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-24-2} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-24-2}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$s$
+برای کاهش بعد به 
+دو
+ بعد بر روی مجموعه داده‌‌‌ی 
+آیریس
+\ref{sec:Iris}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+با تصویر تنک‌تر عملکر کاهش بعد به طرز محسوس تغییر نمی‌کند
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-24-3} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-24-3}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$s$
+برای کاهش بعد به 
+دو
+ بعد بر روی مجموعه داده‌‌‌ی 
+دیابت
+\ref{sec:Diabetes}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+با تصویر تنک‌تر عملکرد کاهش بعد به شدت بد می‌شود
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-24-4} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-24-4}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$s$
+برای کاهش بعد به 
+دو
+بعد بر روی مجموعه داده‌‌‌ی 
+اسکناس
+\ref{sec:Swiss}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+با تصویر تنک‌تر عملکرد کاهش بعد به شدت بد می‌شود
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-24-5} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-24-5}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$s$
+برای کاهش بعد به 
+دو
+بعد بر روی مجموعه داده‌‌‌ی 
+بذر
+\ref{sec:Seeds}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+با تصویر تنک‌تر عملکر کاهش بعد به طرز محسوس تغییر نمی‌کند
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-24-6} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-24-6}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$s$
+برای کاهش بعد به 
+دو
+ بعد بر روی مجموعه داده‌‌‌ی 
+پروتئین
+\ref{sec:MPE}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+با تصویر تنک‌تر عملکر کاهش بعد به طرز محسوس تغییر نمی‌کند
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-24-7} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-24-7}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$s$
+برای کاهش بعد به 
+دو
+ بعد بر روی مجموعه داده‌‌‌ی 
+خرچنگ
+\ref{sec:Crabs}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+با تصویر تنک‌تر عملکر کاهش بعد به طرز محسوس تغییر نمی‌کند
+}
+\end{figure}
 
 
 \section{
@@ -393,24 +1865,133 @@ Crabs & 0.0481402 & 0.0463655 & 0\\
 }
 
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-26-1} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-26-1}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$s$
+برای کاهش بعد به 
+سه بعد بر روی مجموعه داده‌‌‌ی 
+تیروئید
+\ref{sec:Thyroid}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+با تصویر تنک‌تر عملکرد کاهش بعد به شدت بد می‌شود
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-26-2} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-26-2}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$s$
+برای کاهش بعد به 
+سه بعد بر روی مجموعه داده‌‌‌ی 
+آیریس
+\ref{sec:Iris}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+با تصویر تنک‌تر عملکرد کاهش بعد به شدت بد می‌شود
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-26-3} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-26-3}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$s$
+برای کاهش بعد به 
+سه بعد بر روی مجموعه داده‌‌‌ی 
+دیابت
+\ref{sec:Diabetes}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+با تصویر تنک‌ مشخص با 
+$s=1.7$
+ عملکرد بهتری دارد
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-26-4} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-26-4}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$s$
+برای کاهش بعد به 
+سه بعد بر روی مجموعه داده‌‌‌ی 
+اسکناس
+\ref{sec:Swiss}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+با تصویر تنک‌تر عملکرد کاهش بعد به شدت بد می‌شود
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-26-5} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-26-5}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$s$
+برای کاهش بعد به 
+سه بعد بر روی مجموعه داده‌‌‌ی 
+بذر
+\ref{sec:Seeds}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+با تصویر تنک‌ مشخص با 
+$s=1.8$
+ عملکرد کاهش بعد بهتر است
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-26-6} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-26-6}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$s$
+برای کاهش بعد به 
+سه بعد بر روی مجموعه داده‌‌‌ی 
+پروتئین
+\ref{sec:MPE}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+با تصویر تنک‌تر عملکر کاهش بعد به طرز محسوس تغییر نمی‌کند
+}
+\end{figure}
 
-\begin{center}\includegraphics[width=1\linewidth]{Report_files/figure-latex/unnamed-chunk-26-7} \end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report_files/figure-latex/unnamed-chunk-26-7}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد 
+$C_e$
+به ازای تغییر پارامتر
+$s$
+برای کاهش بعد به 
+سه بعد بر روی مجموعه داده‌‌‌ی 
+خرچنگ
+\ref{sec:Crabs}
+. این نمودار بیانگر این است که برای این مجموعه داده کاهش بعد 
+با تصویر تنک‌تر عملکرد کاهش بعد به شدت بد می‌شود
+}
+\end{figure}
 
 
 
 \section{
-جدول مقایسه نتایج پایان‌نامه با تحلیل مولفه‌های اصلی با معیارهای وابستگی مختلف
+جدول مقایسه نتایج پایان‌نامه با تحلیل مولفه‌های اصلی و معیارهای وابستگی مختلف
 }
 
 ستون‌های اضافه شده به جداول از 
@@ -537,6 +2118,281 @@ Crabs 			&
 \end{latin}
 \rowcolors{2}{white}{white}
 \end{table}
+
+
+\section{
+بررسی عملکرد تصویر تصادفی برای کاهش بعد داده‌های بزرگ مقیاس شبیه‌سازی شده
+}
+
+در این بخش نتایج مربوط به داده‌های بزرگ مقیاس شبیه سازی شده بیان شده است. دو مجموعه‌ داده شبیه‌سازی شده یکی با 200 بعد و دیگری با 1000 بعد هر دو شامل 800 نمونه می‌شوند و در هر دو دو کلاس داده وجود دارد.
+
+\subsection{کاهش بعد با تصویر تصادفی نرمال}
+
+
+\begin{table}[H]
+\caption{
+نتایج کاهش بعد با تصویر تصادفی نرمال به ابعاد 
+$d$
+برای داده‌های شبیه‌سازی شده با ۲۰۰ بعد}
+\begin{latin}
+\centering\rowcolors{2}{gray!6}{white}
+
+\begin{tabular}{rrrr}
+\hiderowcolors
+\toprule
+d & ARI\_p & ARI\_d & C\_e\\
+\midrule
+\showrowcolors
+2 & 0.8600812 & 0.0165356 & -84\\
+3 & 0.8600812 & 0.0175164 & -84\\
+5 & 0.8600812 & 0.0233531 & -84\\
+10 & 0.8600812 & 0.0392362 & -82\\
+20 & 0.8600812 & 0.0783380 & -78\\
+\addlinespace
+30 & 0.8600812 & 0.1210072 & -74\\
+50 & 0.8600812 & 0.2130800 & -65\\
+\bottomrule
+\end{tabular}
+\rowcolors{2}{white}{white}
+\end{latin}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report2_files/figure-latex/unnamed-chunk-3-1}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد داده‌های شبیه‌سازی شده با ۲۰۰ بعد 
+$C_e$
+به ازای تغییر پارامتر بعد کاهش یافته
+$d$
+برای کاهش با تصویر تصادفی نرمال
+}
+\end{figure}
+
+
+\begin{table}[H]
+\caption{
+نتایج کاهش بعد با تصویر تصادفی نرمال به ابعاد 
+$d$
+برای داده‌های شبیه‌سازی شده با 1000 بعد}
+\begin{latin}
+\centering\rowcolors{2}{gray!6}{white}
+
+\begin{tabular}{rrrr}
+\hiderowcolors
+\toprule
+d & ARI\_p & ARI\_d & C\_e\\
+\midrule
+\showrowcolors
+2 & 0.8233352 & 0.0028831 & -82\\
+3 & 0.8233352 & 0.0031754 & -82\\
+5 & 0.8233397 & 0.0036920 & -82\\
+10 & 0.8233352 & 0.0047544 & -82\\
+20 & 0.8233397 & 0.0059592 & -82\\
+\addlinespace
+30 & 0.8233488 & 0.0076884 & -82\\
+50 & 0.8233397 & 0.0103410 & -81\\
+\bottomrule
+\end{tabular}
+\rowcolors{2}{white}{white}
+\end{latin}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report2_files/figure-latex/unnamed-chunk-5-1} 
+\caption{
+نمودار تغییرات عملکرد کاهش بعد داده‌های شبیه‌سازی شده با 1000 بعد 
+$C_e$
+به ازای تغییر پارامتر بعد کاهش یافته
+$d$
+برای کاهش با تصویر تصادفی نرمال
+}
+\end{figure}
+
+
+
+
+
+
+
+\subsection{
+کاهش بعد با تصویر تصادفی کوشی}
+
+\begin{table}[H]
+\caption{
+نتایج کاهش بعد با تصویر تصادفی کوشی به ابعاد 
+$d$
+برای داده‌های شبیه‌سازی شده با ۲۰۰ بعد}
+\begin{latin}
+\centering\rowcolors{2}{gray!6}{white}
+
+\begin{tabular}{rrrr}
+\hiderowcolors
+\toprule
+d & ARI\_p & ARI\_d & C\_e\\
+\midrule
+\showrowcolors
+2 & 0.8600812 & 0.0127881 & -85\\
+3 & 0.8600812 & 0.0125081 & -85\\
+5 & 0.8600812 & 0.0135053 & -85\\
+10 & 0.8600812 & 0.0135418 & -85\\
+20 & 0.8600812 & 0.0134440 & -85\\
+\addlinespace
+30 & 0.8600812 & 0.0139522 & -85\\
+50 & 0.8600812 & 0.0147410 & -85\\
+\bottomrule
+\end{tabular}
+\rowcolors{2}{white}{white}
+\end{latin}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report2_files/figure-latex/unnamed-chunk-8-1}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد داده‌های شبیه‌سازی شده با ۲۰۰ بعد 
+$C_e$
+به ازای تغییر پارامتر بعد کاهش یافته
+$d$
+برای کاهش با تصویر تصادفی کوشی
+}
+\end{figure}
+
+
+
+\begin{table}[H]
+\caption{
+نتایج کاهش بعد با تصویر تصادفی کوشی به ابعاد 
+$d$
+برای داده‌های شبیه‌سازی شده با 1000 بعد}
+\begin{latin}
+\centering\rowcolors{2}{gray!6}{white}
+
+\begin{tabular}{rrrr}
+\hiderowcolors
+\toprule
+d & ARI\_p & ARI\_d & C\_e\\
+\midrule
+\showrowcolors
+2 & 0.8233352 & 0.0027118 & -82\\
+3 & 0.8233352 & 0.0027245 & -82\\
+5 & 0.8233352 & 0.0025270 & -82\\
+10 & 0.8233397 & 0.0027831 & -82\\
+20 & 0.8233352 & 0.0027944 & -82\\
+\addlinespace
+30 & 0.8233397 & 0.0026015 & -82\\
+50 & 0.8233352 & 0.0026218 & -82\\
+\bottomrule
+\end{tabular}
+\rowcolors{2}{white}{white}
+\end{latin}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report2_files/figure-latex/unnamed-chunk-10-1}
+\caption{
+نمودار تغییرات عملکرد کاهش بعد داده‌های شبیه‌سازی شده با 1000 بعد 
+$C_e$
+به ازای تغییر پارامتر بعد کاهش یافته
+$d$
+برای کاهش با تصویر تصادفی کوشی
+}
+\end{figure}
+
+
+
+\subsection{
+کاهش بعد با تصویر تصادفی گسسته
+$s=2$
+}
+
+
+
+\begin{table}[H]
+\caption{
+نتایج کاهش بعد با تصویر تصادفی گسسته به ابعاد 
+$d$
+برای داده‌های شبیه‌سازی شده با ۲۰۰ بعد}
+\begin{latin}
+\centering\rowcolors{2}{gray!6}{white}
+
+\begin{tabular}{rrrr}
+\hiderowcolors
+\toprule
+d & ARI\_p & ARI\_d & C\_e\\
+\midrule
+\showrowcolors
+2 & 0.8600812 & 0.0175178 & -84\\
+3 & 0.8600812 & 0.0198378 & -84\\
+5 & 0.8600812 & 0.0262968 & -83\\
+10 & 0.8600812 & 0.0407918 & -82\\
+20 & 0.8600812 & 0.0816119 & -78\\
+\addlinespace
+30 & 0.8600812 & 0.1240261 & -74\\
+50 & 0.8600812 & 0.2177254 & -64\\
+\bottomrule
+\end{tabular}
+\rowcolors{2}{white}{white}
+\end{latin}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report2_files/figure-latex/unnamed-chunk-13-1} 
+\caption{
+نمودار تغییرات عملکرد کاهش بعد داده‌های شبیه‌سازی شده با ۲۰۰ بعد 
+$C_e$
+به ازای تغییر پارامتر بعد کاهش یافته
+$d$
+برای کاهش با تصویر تصادفی گسسته
+}
+\end{figure}
+
+
+\begin{table}[H]
+\caption{
+نتایج کاهش بعد با تصویر تصادفی گسسته به ابعاد 
+$d$
+برای داده‌های شبیه‌سازی شده با 1000 بعد}
+\begin{latin}
+\centering\rowcolors{2}{gray!6}{white}
+
+\begin{tabular}{rrrr}
+\hiderowcolors
+\toprule
+d & ARI\_p & ARI\_d & C\_e\\
+\midrule
+\showrowcolors
+2 & 0.8233352 & 0.0028570 & -82\\
+3 & 0.8233352 & 0.0032665 & -82\\
+5 & 0.8233352 & 0.0034172 & -82\\
+10 & 0.8233443 & 0.0049866 & -82\\
+20 & 0.8233352 & 0.0057479 & -82\\
+\addlinespace
+30 & 0.8233443 & 0.0071553 & -82\\
+50 & 0.8233352 & 0.0099807 & -81\\
+\bottomrule
+\end{tabular}
+\rowcolors{2}{white}{white}
+\end{latin}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Report2_files/figure-latex/unnamed-chunk-15-1} 
+\caption{
+نمودار تغییرات عملکرد کاهش بعد داده‌های شبیه‌سازی شده با 1000 بعد 
+$C_e$
+به ازای تغییر پارامتر بعد کاهش یافته
+$d$
+برای کاهش با تصویر تصادفی گسسته
+}
+\end{figure}
+
 
 
 

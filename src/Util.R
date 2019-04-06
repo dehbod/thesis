@@ -218,10 +218,17 @@ dataConfiguration <- function(cf, multiVariate = FALSE) {
   
   dClassMean <- matrix(0, nrow = cf$nClass, ncol = cf$nDimention  ,byrow = TRUE)
   theta <- 2 * pi / cf$nClass
-  radious <- 5
-  for(i in 1:cf$nClass) {
-    dClassMean[i, 1] <- radious * cos(theta * i)
-    dClassMean[i, 2] <- radious * sin(theta * i)
+  radious <- 2
+  if(cf$nClass != 2) {
+    for(i in 1:cf$nClass) {
+      dClassMean[i, 1] <- radious * cos(theta * i)
+      dClassMean[i, 2] <- radious * sin(theta * i)
+    }
+  } else {
+    w <- runif(cf$nDimention,min = 0, max = 1)
+    w <- w / sqrt(sum(w ^ 2)) * radious
+    dClassMean[1, ] <- w
+    dClassMean[2, ] <- -w
   }
   # dClassMean[ ,1] <- 10 * seq(0, cf$nClass-1)
   

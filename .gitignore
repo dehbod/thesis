@@ -7,7 +7,4 @@
 *.toc
 *.bbl
 *.blg
-*.RData
 .Rhistory
-src/Report*
-doc/Report_files
